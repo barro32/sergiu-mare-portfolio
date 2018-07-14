@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'Cat-Light';
+	src: url('fonts/catamaran_sans_serif/Catamaran-Light.eot');
+	src: url('fonts/catamaran_sans_serif/Catamaran-Light.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Light.woff2') format('woff2'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Light.woff') format('woff'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Light.ttf') format('truetype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Light.svg') format('svg');;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cat-Regular';
+	src: url('fonts/catamaran_sans_serif/Catamaran-Regular.eot');
+	src: url('fonts/catamaran_sans_serif/Catamaran-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Regular.woff2') format('woff2'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Regular.woff') format('woff'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Regular.ttf') format('truetype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Regular.svg') format('svg');;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cat-SemiBold';
+	src: url('fonts/catamaran_sans_serif/Catamaran-SemiBold.eot');
+	src: url('fonts/catamaran_sans_serif/Catamaran-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-SemiBold.woff2') format('woff2'),
+		 url('fonts/catamaran_sans_serif/Catamaran-SemiBold.woff') format('woff'),
+		 url('fonts/catamaran_sans_serif/Catamaran-SemiBold.ttf') format('truetype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-SemiBold.svg') format('svg');;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cat-Bold';
+	src: url('fonts/catamaran_sans_serif/Catamaran-Bold.eot');
+	src: url('fonts/catamaran_sans_serif/Catamaran-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Bold.woff2') format('woff2'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Bold.woff') format('woff'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Bold.ttf') format('truetype'),
+		 url('fonts/catamaran_sans_serif/Catamaran-Bold.svg') format('svg');;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* serif font */
+@font-face {
+	font-family: 'Droid-Regular';
+	src: url('fonts/droid_serif/DroidSerif-Regular.eot');
+	src: url('fonts/droid_serif/DroidSerif-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/droid_serif/DroidSerif-Regular.woff2') format('woff2'),
+		 url('fonts/droid_serif/DroidSerif-Regular.woff') format('woff'),
+		 url('fonts/droid_serif/DroidSerif-Regular.ttf') format('truetype'),
+		 url('fonts/droid_serif/DroidSerif-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Droid-Bold';
+	src: url('fonts/droid_serif/DroidSerif-Bold.eot');
+	src: url('fonts/droid_serif/DroidSerif-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/droid_serif/DroidSerif-Bold.woff2') format('woff2'),
+		 url('fonts/droid_serif/DroidSerif-Bold.woff') format('woff'),
+		 url('fonts/droid_serif/DroidSerif-Bold.ttf') format('truetype'),
+		 url('fonts/droid_serif/DroidSerif-Bold.svg') format('svg');;
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {box-sizing: border-box; }
+header,
+footer,
+section { background:#ffffff; }
+
+/* general style */
+html, body {height:100%;padding:0;margin:0;font-size:14px;}
+a,
+div,
+span {font-family:'Cat-Regular',sans-serif;}
+p {font-family:'Cat-Regular',sans-serif;line-height:32px;}
+ul,
+ol {margin:0;padding:0;}
+img {max-width:100%;height:auto;}
+ul,
+ol  {list-style-type:none;}
+
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty
+h5:empty,
+h6:empty,
+p:empty,
+a:empty {display:none;}
+
+/* helper classes */
+.left {float:left;}
+.right {float:right;}
+
+/* hide/show */
+.hide {display:none;}
+.show {display:block;}
+
+/* grid */
+.half {width:50%;}
+.quater {width:25%;}
+.one-third {width:33.33%;}
+.two-third {width:66.66%;}
+.full-width {width:100%;display:block;}
+
+/* horizontal-alignment */
+.center {text-align:center;}
+
+/* clear the float */
+.cf:after {content:"";clear:both;display:block;}
+
+.padding-module {padding:50px 0;}
+.title {font-size:36px;padding-bottom:20px;font-family: 'Droid-Regular';}
+.sub-title {font-size:26px;padding-bottom:20px;font-family: 'Droid-Regular';}
+.text {font-size:18px;font-family: 'Cat-Regular';}
+.line-decoration {padding:10px;border-left:5px solid #5887FF;}
+
+/* img class */
+.icon svg,
+img.icon,
+svg.icon  {max-width:50px;max-height:50px;}
+/* list inline */
+.inline li {display:inline;}
+
+
+/* holders */
+.holder-1200 { max-width:1200px; margin:0 auto; padding:0 20px; }
+
+/* button and <a> */
+a.button,
+button.button { position:relative;background:#080808;border:none;outline:none;border-radius:5px;color:#ffffff;padding:10px;text-decoration:none;cursor:pointer;}
+a.button:after,
+button.button:after {content:"";position:absolute;top:0;left:0;width:0;height:100%;background:#5887FF;color:#080808;transition:width 0.3s;}
+a.button:hover:after,
+button.button:hover:after,
+a.button:focus:after,
+button.button:focus:after {width:100%;border-radius:5px;}
+a.button.not-active:hover:after,
+a.button.not-active:focus:after,
+button.button.not-active:hover:after,
+button.button.not-active:focus:after {width:0;}
+a.button span,
+button.button span {font-family: 'Cat-SemiBold';}
+a.button:hover span,
+button.button:hover span,
+a.button:focus span,
+button.button:focus span{position:relative;z-index:3;color:#080808;}
+/* maps API */  
+#map {display:block;min-height:300px;position:relative;}
+
+
+
