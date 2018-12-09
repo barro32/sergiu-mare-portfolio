@@ -117,7 +117,7 @@ a:empty {display:none;}
 /* clear the float */
 .cf:after {content:"";clear:both;display:block;}
 
-.padding-module {padding:50px 0;}
+.mod {padding:50px 0;}
 .title {font-size:36px;padding-bottom:20px;font-family: 'Droid-Regular';}
 .sub-title {font-size:26px;padding-bottom:20px;font-family: 'Droid-Regular';}
 .text {font-size:18px;font-family: 'Cat-Regular';}

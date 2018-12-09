@@ -116,7 +116,6 @@ var initMap;
     }
 
     $(document).ready(function () {
-        alert(msp.cache.$main.length);
         if (msp.cache.$main.find('#map').length) {
             mapObj();
         }

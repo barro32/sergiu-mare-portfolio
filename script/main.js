@@ -427,7 +427,7 @@ $(document).ready(function () {
     // sticky header
     stickyHeader();
 
-    $('.padding-module').each(scrollAboveBottom);
+    $('.mod').each(scrollAboveBottom);
 
     // changing the images in the paralax at a certain scroll
     if ($windowScrollTop > ($('.skills').offset().top - $windowHeight / 1.5)) {
