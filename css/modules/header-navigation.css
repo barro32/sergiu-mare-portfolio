@@ -14,7 +14,8 @@
 .header .complex-element .wrap-cube {perspective: 800px;perspective-origin: 25% 66px;}
 .header .complex-element .cube-shadow {position: relative;width: 200px;transform-style: preserve-3d;transform:rotate3d(-1,1,-1,-90deg) rotateX(15deg)  rotateY(10deg) translate3d(-50px,-275px,100px);}
 .header .complex-element .cube-shadow div {position: absolute;width: 200px;height: 200px;background:radial-gradient(#605e5e,#383838, #080808,#080808);}
-.header .navigation {text-align:right;padding:20px 0;transition:0.5s;}
+.header .navigation {text-align:right;padding:20px 0;transition:0.5s;background:transparent;}
+.header .navigation .nav-list { margin: 0; }
 .header .navigation .nav-list li {display:inline-block;padding:10px;}
 .header .navigation .nav-list li a {color:#ffffff;text-decoration:none;position:relative;transition:width 0.3s;font-size:18px;}
 .header .navigation .nav-list li a:after {content:"";position:absolute;bottom:0;left:50%;height:2px;background:#5887FF;width:0;transition:0.3s;}
