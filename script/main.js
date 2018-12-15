@@ -43,104 +43,6 @@ $(document).ready(function () {
   msp.cache.$footer = msp.cache.$body.find('#site-footer');
   msp.cache.$main = msp.cache.$body.find('#main');
 
-  // page-hero
-  function pageHero() {
-    var $windowHeight = $(window).height();
-
-    // checkin if the height of the page hero is displayed full window height
-    if ($('.page-hero').find('.holder').height() !== $windowHeight) {
-      $('.page-hero').find('.holder').height($windowHeight);
-    }
-  }
-
-  // navigation
-  function navigation() {
-    var enterTimer,
-      leaveTimer,
-      clickTimer,
-      mobileClickTimer,
-      $header = $('.header');
-
-    // desktop navigation			
-    $header.find('.nav-list li').on({
-      mouseenter: function () {
-
-        $this = $(this);
-
-        if ($(window).width() < 768) { return; }
-
-        clearTimeout(enterTimer);
-        enterTimer = setTimeout(function () {
-
-          $this.addClass('active');
-          $this.siblings().removeClass('active');
-
-        }, 300);
-      },
-      click: function () {
-
-        if ($(window).width() > 768) { return; }
-
-        clickTimer = setTimeout(function () {
-
-          $this.addClass('active');
-          $this.siblings().removeClass('active');
-
-        }, 300)
-      }
-    })
-
-    // mobile navigation
-    $header.find('.burger-menu').click(function () {
-
-      $this = $(this);
-
-      //avoid multiple clicks
-      clearTimeout(mobileClickTimer);
-      mobileClickTimer = setTimeout(function () {
-        $this.toggleClass('open');
-        $header.toggleClass('shadow');
-      }, 300)
-
-
-    })
-
-    $header.find('a').click(function (e) {
-
-      $header.find('.burger-menu').removeClass('open');
-      $header.removeClass('shadow');
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        e.preventDefault();
-
-        // Store hash
-        var hash = $(this.hash).offset().top - 60;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: hash
-        }, 800, function () {
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-
-    });
-
-    // on scrolling down the page the active class in te navigation is updated 
-    $('body > section').mouseenter(function () {
-      var $this = $(this),
-        $thisId = "#" + $this.attr('id');
-
-      $header.find('a[href=' + $thisId + ']').parent().addClass('active').siblings().removeClass('active');
-
-    })
-  }
-
   //sticky header
   function stickyHeader() {
     var $header = $('.header');
@@ -318,13 +220,6 @@ $(document).ready(function () {
 
   }
 
-
-  //footer, makes the year in the footer  dynamical 
-  function footer() {
-    var currentYear = new Date().getFullYear();
-    $('footer .year').text(currentYear);
-  }
-
   // general function to apply animations
   function scrollAboveBottom() {
     var $this = $(this);
@@ -415,12 +310,6 @@ $(document).ready(function () {
     $spanHolder.removeClass();
   }
 
-
-  // on resize reset the values
-  $window.resize(function () {
-    pageHero();
-  });
-
   $window.scroll(function () {
     var $windowScrollTop = $window.scrollTop(),
       $windowHeight = $window.height();
@@ -445,21 +334,11 @@ $(document).ready(function () {
     $('.page-hero-message').each(writeText)
 
     $('.page-hero video').get(0).play();
-  })
-
-  // checking if the page hero is displayed full width
-  if ($('.page-hero').length) {
-    pageHero();
-  };
+  });
 
   // the navigation
   if ($('.header').length) {
     stickyHeader();
-  };
-
-  // the education and work module
-  if ($('.navigation').length) {
-    navigation();
   };
 
   // the skills module
@@ -467,11 +346,6 @@ $(document).ready(function () {
 
   // the portfolio module
   $portfolio.each(portfolio);
-
-  //footer
-  if ($('footer').length) {
-    footer();
-  };
 
   // initialise plug-in
   $(".skills .particles").jParticle({

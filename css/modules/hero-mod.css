@@ -19,5 +19,5 @@
 @media screen and (max-width: 768px) { 
     .page-hero .page-hero-message span { font-size: 30px; font-size: 3rem; }
     .page-hero .page-hero-message span.visible { color: transparent; }
-    .page-hero .page-hero-message span.visible > span { display: block; color: #ffffff; }	
+    .page-hero .page-hero-message span.visible > span { color: #ffffff; }	
 }
