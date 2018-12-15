@@ -48,8 +48,8 @@ $(document).ready(function () {
     var $windowHeight = $(window).height();
 
     // checkin if the height of the page hero is displayed full window height
-    if ($('.page-hero').find('.holder-1200').height() !== $windowHeight) {
-      $('.page-hero').find('.holder-1200').height($windowHeight);
+    if ($('.page-hero').find('.holder').height() !== $windowHeight) {
+      $('.page-hero').find('.holder').height($windowHeight);
     }
   }
 

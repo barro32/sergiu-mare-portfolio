@@ -2,10 +2,10 @@
 .portfolio { overflow: hidden; }
 .portfolio .holder { text-align: center; }
 .portfolio .holder .my-project-title { font-size: 22px; }
-.portfolio .holder .button.load-projects { max-width: 300px; }
+.portfolio .holder .cta.load-projects { max-width: 300px; }
 .portfolio .overlay { position: fixed; top: 0; left: 0; display: none; width: 100vw; height: 100vh; background: #080808; opacity: 0.5; z-index: 1; }
 .portfolio .btn-holder { text-align: left; }
-.portfolio .btn-holder .button { min-width: 80%; }
+.portfolio .btn-holder .cta { min-width: 80%; }
 .portfolio .two-third { position: relative; }
 .portfolio .two-third.left + .one-third .holder-image-text { text-align: right; padding-top: 20px; }
 .portfolio .current-projects .row .funky-arrow { position: relative; z-index: 0; }
@@ -49,7 +49,7 @@
 .portfolio .desc .desc-body .modal-title { margin: 0; padding-bottom: 20px; font-size: 28px; }
 .portfolio .desc .desc-body .modal-text,
 .portfolio .desc .desc-body .modal-skills { margin: 0; padding: 0 0 20px; font-size: 18px; }
-.portfolio .desc .desc-body .button { display: block; width: 50%; margin: 0 auto; font-size: 18px; }
+.portfolio .desc .desc-body .cta { display: block; width: 50%; margin: 0 auto; font-size: 18px; }
 
 @media screen and (max-width: 768px) { 
 	.portfolio .current-projects .row .two-third .show-tablet,
@@ -64,7 +64,7 @@
 	.portfolio .current-projects .row > .row-elem { width: 100%; }
 	.portfolio .current-projects .row > .row-elem:first-child { padding-bottom: 70px; }
 	.portfolio .current-projects .row > .row-elem .btn-holder { position: absolute; bottom: 50px; left: 50%; width: 100%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
-	.portfolio .current-projects .row > .row-elem .btn-holder .button { width: 100%; }
+	.portfolio .current-projects .row > .row-elem .btn-holder .cta { width: 100%; }
 	.portfolio .current-projects .row .one-third .holder-image-text { display: none; }
 
 	.portfolio .desc .desc-header,

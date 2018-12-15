@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="css/libraries/hover.css" type="text/css">
 	<link rel="stylesheet" href="css/libraries/normalizer.css" type="text/css">
 	<link rel="stylesheet" href="css/global.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/header-mod.css" type="text/css" />
 	<link rel="stylesheet" href="css/modules/hero-mod.css" type="text/css" />
 	<link rel="stylesheet" href="css/modules/about-mod.css" type="text/css" />
 	<link rel="stylesheet" href="css/modules/quote-mod.css" type="text/css" />
@@ -28,7 +27,7 @@
 <body>
 	<!-- header -->
 	<header class="header" id="header">
-		<div class="holder-1200">
+		<div class="holder">
 			<img src="images/logoMS.png" class="hide logo" />
 			<!-- logo 3d element -->
 			<div class="complex-element">
@@ -67,7 +66,7 @@
 	<div id="main">
 		<!-- page hero -->
 		<section class="page-hero" id="page-hero">
-			<div class="holder-1200">
+			<div class="holder">
 				<video autoplay loop muted class="page-hero-video" id="check-video">
 					<source src="images/video/page-hero-video.mp4" type="video/mp4">
 					<source src="images/video/page-hero-video.ogg" type="video/ogg">
@@ -93,10 +92,12 @@
 
 		<!-- about-me -->
 		<section class="about-me mod" id="about-me">
-			<div class="holder-1200 cf">
+			<div class="holder cf">
 				<h2 class="title line-decoration">About me</h2>
 				<div class="image-element left one-third">
-					<div class="overlay"><img src="images/sergiu-mare.jpg" class="personal-image"></div>
+					<figure class="overlay">
+						<img src="images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
+					</figure>
 				</div>
 				<div class="text-element left two-third">
 					<h3 class="sub-title">Hello,</h3>
@@ -107,13 +108,13 @@
 						that can make a real difference for the regular user. I like to help local and global business to achieve their
 						targets regarding clients and sales through web applications.</p>
 					<div class="download-wrapper">
-						<a href="download/sergiu_mare_cv.pdf" download class="button">
+						<a class="cta" href="files/sergiu_mare_cv.pdf" download>
 							<span>Download CV</span>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="holder-1200 cf">
+			<div class="holder cf">
 				<div class="mod">
 					<h2 class="title line-decoration">My daily responsibilities?</h2>
 					<ul class="dialy-duties">
@@ -194,7 +195,7 @@
 		<!-- quote -->
 		<section class="quote mod">
 			<img src="images/coding.jpg" alt="background image" class="bg-img" />
-			<div class="holder-1200">
+			<div class="holder">
 				<h2 class="title">“Dreams are extremely important. You can’t do it unless you imagine it.” <span class="full-width">George
 						Lucas</span></h2>
 			</div>
@@ -202,7 +203,7 @@
 
 		<!-- skills -->
 		<section class="skills mod" id="skills">
-			<div class=" holder-1200">
+			<div class=" holder">
 				<h2 class="title line-decoration">
 					Skills
 					<span class="particles"></span>
@@ -511,7 +512,7 @@
 
 		<!-- Portfolio -->
 		<section class="portfolio mod" id="portfolio">
-			<div class="holder-1200">
+			<div class="holder">
 				<h2 class="title line-decoration">
 					Portfolio
 					<span class="particles"></span>
@@ -542,7 +543,7 @@
 						<div class="one-third left row-elem">
 							<h4 class="project-subtitle">A fully responsive landing page for SKNK labs.</h4>
 							<div class="btn-holder">
-								<button type="button" class="button" data-title="Sknk Lab" data-info="This project was a landing page for SKNK labs in which the user can use a quote generator and take the contact details of the owner. This page was developed with the following technologies HTML5, CSS3, and JavaScript/Jquery."
+								<button type="button" class="cta" data-title="Sknk Lab" data-info="This project was a landing page for SKNK labs in which the user can use a quote generator and take the contact details of the owner. This page was developed with the following technologies HTML5, CSS3, and JavaScript/Jquery."
 								 data-skills="" data-url="http://www.maresergiu.co.uk/projects/sknk">
 									<span>Details</span>
 								</button>
@@ -579,7 +580,7 @@
 						<div class="one-third left row-elem">
 							<h4 class="project-subtitle">An asset displayer for investors.</h4>
 							<div class="btn-holder">
-								<button class="button" data-title="Resolute property studio" data-info="This website is a tool for banks/companies that have a portfolio of investments assets. The investors will be able to filter the database and see all details related to that asset. They can request to be contacted with the help of a form and receive a phone call from the company that provided this application."
+								<button class="cta" data-title="Resolute property studio" data-info="This website is a tool for banks/companies that have a portfolio of investments assets. The investors will be able to filter the database and see all details related to that asset. They can request to be contacted with the help of a form and receive a phone call from the company that provided this application."
 								 data-skills="From a design point of view, I had to do the UX journey with the client, and also to create a design in a photoshop. This web application was built with HTML5, CSS3, JavaScript/Jquery, Rest API and Firebase. This project is fully responsive and compatible with Chrome, Firefox, and IE11+. The application uses one API for implementation. All the back-end in handled through firebase, saving data, hoisting, retrieving data and sending emails."
 								 data-url="https://olimpus-front-end.firebaseapp.com">
 									<span>Details</span>
@@ -617,7 +618,7 @@
 						<div class="one-third left row-elem">
 							<h4 class="project-subtitle">One page application to make the summary for pdfs documents.</h4>
 							<div class="btn-holder">
-								<button type="button" class="button" data-title="Text-miner" data-info="This web application, let's the user to upload a pdf document, and it returns the suummary of that pdf. No need to read a 25 pages pdf anymore :)."
+								<button type="button" class="cta" data-title="Text-miner" data-info="This web application, let's the user to upload a pdf document, and it returns the suummary of that pdf. No need to read a 25 pages pdf anymore :)."
 								 data-skills="From a design point of view, I had to do the UX journey with the client, and also to create a design in a photoshop. This web application was built with HTML5, CSS3, JavaScript/Jquery, Firebase and Rest API."
 								 data-url="https://text-miner-6d612.firebaseapp.com/">
 									<span>Details</span>
@@ -634,7 +635,7 @@
 				</div>
 				<div class="holder">
 					<div class="mod">
-						<button class="button load-projects">
+						<button class="cta load-projects">
 							<span>Load more projects</span>
 						</button>
 					</div>
@@ -662,7 +663,7 @@
 									<img src="images/colt.png" class="project-img" />
 								</a>
 								<div class="btn-holder">
-									<button class="button" data-title="Colt Data Center" data-info="I have been a part of this project from start to finish, developing half of the modules from the interface."
+									<button class="cta" data-title="Colt Data Center" data-info="I have been a part of this project from start to finish, developing half of the modules from the interface."
 									 data-skills="This application was built with HTML5, CSS3, JavaScript/Jquery, ASP.NET, C# and Sitecore."
 									 data-url="https://www.coltdatacentres.net/">
 										<span>Details</span>
@@ -681,7 +682,7 @@
 						<h5 class="modal-title">The name of the project</h5>
 						<p class="modal-text">About the poject and technologies which were used to develop the website</p>
 						<p class="modal-skills">What did you learn and ho did you improved my skills</p>
-						<a href="#" class="button">
+						<a href="#" class="cta">
 							<span>Visit site</span>
 						</a>
 					</section>
@@ -694,7 +695,7 @@
 
 		<!--Start Contact  -->
 		<section id="contact-me" class="contact-me mod">
-			<div class="holder-1200 cf">
+			<div class="holder cf">
 				<h2 class="title">Let's Keep In Touch!</h2>
 				<div class="two-third left contact-form">
 					<form name="sentMessage" method="post" action="/script/contact/contact_me.php" id="contactForm" novalidate>
@@ -721,7 +722,7 @@
 						</div>
 						<div id="success"></div> <!-- For success/fail messages -->
 						<div class="holder-button">
-							<button type="submit" class="button not-active pull-right  hvr-push buttonSubmit">Send</button>
+							<button type="submit" class="cta not-active pull-right  hvr-push buttonSubmit">Send</button>
 						</div>
 					</form>
 				</div>
@@ -749,7 +750,7 @@
 	</div>
 	<!-- footer -->
 	<footer class="footer">
-		<div class="holder-1200 cf">
+		<div class="holder cf">
 			<nav class="one-third element secondary-nav left">
 				<ul class="nav-list">
 					<li class="nav-elem">
