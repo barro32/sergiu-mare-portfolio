@@ -6,7 +6,7 @@
 .page-hero .page-hero-message { position: relative; top: 50vh; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 2; color: #ffffff; text-align: center; }
 .page-hero .page-hero-message span { font-size: 60px; font-size: 6rem; font-family: "Droid-Bold", serif; }
 .page-hero .page-hero-message h1 > span { color: transparent; -webkit-transition: 1s; -o-transition: 1s; transition: 1s; }
-.page-hero .page-hero-message span.visible {  color: #ffffff; }
+.page-hero .page-hero-message span.visible { color: #ffffff; }
 
 @media screen and (max-width: 1400px) { 
     .page-hero .page-hero-img { left: 0; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }	
@@ -18,6 +18,6 @@
 
 @media screen and (max-width: 768px) { 
     .page-hero .page-hero-message span { font-size: 30px; font-size: 3rem; }
-	.page-hero .page-hero-message span.visible { color: transparent; }
-	.page-hero .page-hero-message span.visible > span { display: block; color: #ffffff; }	
+    .page-hero .page-hero-message span.visible { color: transparent; }
+    .page-hero .page-hero-message span.visible > span { display: block; color: #ffffff; }	
 }
