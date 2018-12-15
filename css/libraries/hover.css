@@ -1949,7 +1949,7 @@
   position: relative;
 }
 .hvr-trim:before {
-  content: '';
+  content: "";
   position: absolute;
   border: white solid 4px;
   top: 4px;
@@ -1994,7 +1994,7 @@
   position: relative;
 }
 .hvr-ripple-out:before {
-  content: '';
+  content: "";
   position: absolute;
   border: #e1e1e1 solid 6px;
   top: 0;
@@ -2037,7 +2037,7 @@
   position: relative;
 }
 .hvr-ripple-in:before {
-  content: '';
+  content: "";
   position: absolute;
   border: #e1e1e1 solid 4px;
   top: -12px;
@@ -2063,7 +2063,7 @@
   position: relative;
 }
 .hvr-outline-out:before {
-  content: '';
+  content: "";
   position: absolute;
   border: #e1e1e1 solid 4px;
   top: 0;
@@ -2093,7 +2093,7 @@
 }
 .hvr-outline-in:before {
   pointer-events: none;
-  content: '';
+  content: "";
   position: absolute;
   border: #e1e1e1 solid 4px;
   top: -16px;
@@ -2515,7 +2515,7 @@
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   top: 100%;
   left: 5%;
   height: 10px;
@@ -2538,7 +2538,7 @@
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  /* move the element down by 5px (it will stay in place because it"s attached to the element that also moves up 5px) */
 }
 
 /* Shadow Radial */
@@ -2553,7 +2553,7 @@
 .hvr-shadow-radial:before, .hvr-shadow-radial:after {
   pointer-events: none;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   width: 100%;
   box-sizing: border-box;
@@ -2593,7 +2593,7 @@
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   border-style: solid;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -2622,7 +2622,7 @@
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   border-style: solid;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -2651,7 +2651,7 @@
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   border-style: solid;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -2680,7 +2680,7 @@
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   border-style: solid;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -2712,7 +2712,7 @@
 .hvr-bubble-float-top:before {
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   left: calc(50% - 10px);
   top: 0;
   border-style: solid;
@@ -2750,7 +2750,7 @@
   z-index: -1;
   top: calc(50% - 10px);
   right: 0;
-  content: '';
+  content: "";
   border-style: solid;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #e1e1e1;
@@ -2784,7 +2784,7 @@
 .hvr-bubble-float-bottom:before {
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   left: calc(50% - 10px);
   bottom: 0;
   border-style: solid;
@@ -2820,7 +2820,7 @@
 .hvr-bubble-float-left:before {
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   top: calc(50% - 10px);
   left: 0;
   border-style: solid;
@@ -4218,7 +4218,7 @@
 .hvr-curl-top-left:before {
   pointer-events: none;
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   width: 0;
   top: 0;
@@ -4226,7 +4226,7 @@
   background: white;
   /* IE9 */
   background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#ffffff", endColorstr="#000000");
   /*For IE7-8-9*/
   z-index: 1000;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -4252,7 +4252,7 @@
 .hvr-curl-top-right:before {
   pointer-events: none;
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   width: 0;
   top: 0;
@@ -4283,7 +4283,7 @@
 .hvr-curl-bottom-right:before {
   pointer-events: none;
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   width: 0;
   bottom: 0;
@@ -4314,7 +4314,7 @@
 .hvr-curl-bottom-left:before {
   pointer-events: none;
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   width: 0;
   bottom: 0;

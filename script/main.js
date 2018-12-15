@@ -477,7 +477,7 @@ $(document).ready(function () {
   $(".skills .particles").jParticle({
     particlesNumber: 30,
     background: "#ffffff",
-    color: "#5887FF",
+    color: "#5887ff",
 
   });
 
