@@ -17,7 +17,7 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 html { font-size: 62.5%; height: 100%; }
 html,
-body { padding: 0; margin: 0; font-family: sans-serif; }
+body { padding: 0; margin: 0; font-family: 'Cat-Regular', sans-serif; }
 body { font-size: 16px; font-size: 1.6rem; }
 h1,
 h2, 
@@ -88,7 +88,7 @@ svg { width: 100%; height: auto; }
 .cta:after { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background: #5887FF; color: #080808; -webkit-transition: width 0.3s; -o-transition: width 0.3s; transition: width 0.3s; }
 .cta:hover:after,
 .cta:focus:after { width: 100%; border-radius: 5px; }
-.cta span { font-family: 'Cat-SemiBold'; }
+.cta span { font-family: 'Cat-SemiBold', sans-serif; }
 .cta:hover span,
 .cta:focus span { position: relative; z-index: 3; color: #080808; }
 .cta.not-active:hover:after,
@@ -102,7 +102,7 @@ svg { width: 100%; height: auto; }
 .header .holder { position: relative; }
 .header .complex-element { position: absolute; top: -197px; left: 0; display: inline-block; transform: scale(0.2,0.2); }
 .header .complex-element .wrap { perspective: 800px; min-height: 500px; perspective-origin: 50% 50%; }
-.header .complex-element .cube { position: relative; width: 200px; transform-style: preserve-3d; transition: 1s; transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(0deg); animation: spin 10s linear; animation-iteration-count: infinite; }
+.header .complex-element .cube { position: relative; width: 200px; transform-style: preserve-3d; transition: 1s; transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(0deg); animation: msp-mod-header-logo-spin 10s linear; animation-iteration-count: infinite; }
 .header .complex-element .cube div { position: absolute; width: 200px; height: 200px; border: 1px solid #5887FF; }
 .header .complex-element .back { transform: translateZ(-100px) rotateY(180deg); }
 .header .complex-element .right { transform: rotateY(-270deg) translateX(100px); transform-origin: top right; }
@@ -131,7 +131,7 @@ svg { width: 100%; height: auto; }
 
 .header.fixed { border-color: transparent; background: rgba(8,8,8,1); -webkit-box-shadow: 0px 7px 18px -5px rgba(0,0,0,0.75); -moz-box-shadow: 0px 7px 18px -5px rgba(0,0,0,0.75); box-shadow: 0px 7px 18px -5px rgba(0,0,0,0.75); }
 .header.fixed .complex-element { top: -190px; }
-.header.fixed .cube { border-color: transparent; background: rgba(8,8,8,1); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); animation: fixedSpin 10s linear; animation-iteration-count: infinite; }
+.header.fixed .cube { border-color: transparent; background: rgba(8,8,8,1); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); animation: msp-mod-header-logo-fixed-spin 10s linear; animation-iteration-count: infinite; }
 .header.fixed .navigation { padding: 10px 0; }
 
 /* map */  
@@ -173,32 +173,32 @@ svg { width: 100%; height: auto; }
 /* keyframes
    --------- */
 /* header cub animation */
-@-webkit-keyframes spin { 
+@-webkit-keyframes msp-mod-header-logo-spin { 
     0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
     100% { -webkit-transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); }
 }
 
-@keyframes spin { 
+@keyframes msp-mod-header-logo-spin { 
     0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
     100% { -webkit-transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); }
 }
 
-@-webkit-keyframes fixedSpin { 
+@-webkit-keyframes msp-mod-header-logo-fixed-spin { 
   0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
   100% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); }
 }
 
-@keyframes fixedSpin { 
+@keyframes msp-mod-header-logo-fixed-spin { 
   0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
   100% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); }
 }
   
-@-webkit-keyframes increaseOpacity { 
+@-webkit-keyframes  msp-global-fade-in  { 
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
   
-@keyframes increaseOpacity { 
+@keyframes  msp-global-fade-in  { 
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
