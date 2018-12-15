@@ -1,0 +1,13 @@
+/* contact module*/
+.contact-me { background: #5887ff; }
+.contact-me .contact-form input { width: calc(100% - 100px); padding: 5px 10px; border-radius: 5px; margin-bottom: 5px; }
+.contact-me .contact-form textarea { width: calc(100% - 100px); min-height: 200px; padding: 5px 10px; border-radius: 5px; margin-bottom: 5px; }
+.contact-me .contact-form .holder-button { width: calc(100% - 100px); text-align: right; }
+
+@media screen and (max-width: 768px) { 
+   .contact-me .two-third,
+   .contact-me .one-third,
+   .contact-me .contact-form input,
+   .contact-me .contact-form textarea,
+   .contact-me .contact-form .holder-button { width: 100%; }
+}
