@@ -1,7 +1,7 @@
 /* about module */
 .about-me { overflow: hidden; }
 .about-me .image-element { padding: 20px 0; }
-.about-me .image-element .personal-image { max-width: 200px;height: auto;margin-left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);border-radius:  35%;-webkit-box-shadow:  12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2);box-shadow:  12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2);; }
+.about-me .image-element .personal-image { max-width: 200px; height: auto; margin-left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); border-radius:  35%; -webkit-box-shadow:  12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2); box-shadow:  12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2); ; }
 .about-me .text-element .text { max-width: 600px; }
 .about-me .text-element .download-wrapper { padding-top: 30px; }
 .about-me .text-element .download-wrapper a { padding:  15px 50px }
@@ -12,7 +12,7 @@
 .about-me .dialy-duties .duty > span {  display: inline-block; vertical-align: top; }
 .about-me .dialy-duties .duty .duty-details {  width: calc(100% - 60px); margin-top: 13px; }
 .about-me .dialy-duties .duty .duty-details p {  line-height: normal;  padding-left: 20px; font-size:  18px; margin: 0; }
-.about-me .dialy-duties svg {  -webkit-transform: rotate(45deg);  -ms-transform: rotate(45deg);  transform: rotate(45deg); width: 50px;height: 50px; }
+.about-me .dialy-duties svg {  -webkit-transform: rotate(45deg);  -ms-transform: rotate(45deg);  transform: rotate(45deg); width: 50px; height: 50px; }
 
 @media screen and (max-width:  920px) { 
     .about-me .image-element { width: 294px; }
@@ -22,6 +22,6 @@
 @media screen and (max-width:  768px) { 
     .about-me .image-element,
     .about-me .dialy-duties .duty {  width: 100%; }
-	.about-me .text-element { width: 100%;text-align: center; }
-	.about-me .text-element .text { max-width: 600px;margin: 0 auto; }
+	.about-me .text-element { width: 100%; text-align: center; }
+	.about-me .text-element .text { max-width: 600px; margin: 0 auto; }
  }
