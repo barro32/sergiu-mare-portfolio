@@ -40,10 +40,10 @@
 .portfolio .desc .desc-header,
 .portfolio .desc .desc-footer { position: relative; padding: 20px 0; background: #5887ff; }
 .portfolio .desc .desc-footer { padding-top: 30px; }
-.portfolio .desc .desc-header .close-button { position: relative; left: calc(100% - 80px);  width: 40px; height: 40px; cursor: pointer; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+.portfolio .desc .desc-header .close-button { position: relative; left: calc(100% - 80px); width: 40px; height: 40px; cursor: pointer; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 .portfolio .desc .desc-header .close-button:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 .portfolio .desc .desc-header .close-button:after,
-.portfolio .desc .desc-header .close-button:before { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 3px; background: #080808;  -webkit-transform: translateY(-50%) rotate(45deg);  -ms-transform: translateY(-50%) rotate(45deg);  transform: translateY(-50%) rotate(45deg); }
+.portfolio .desc .desc-header .close-button:before { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 3px; background: #080808; -webkit-transform: translateY(-50%) rotate(45deg); -ms-transform: translateY(-50%) rotate(45deg); transform: translateY(-50%) rotate(45deg); }
 .portfolio .desc .desc-header .close-button:before { -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
 .portfolio .desc .desc-body { padding: 50px 20px; }
 .portfolio .desc .desc-body .modal-title { margin: 0; padding-bottom: 20px; font-size: 28px; font-size: 2.8rem; }
@@ -52,14 +52,14 @@
 .portfolio .desc .desc-body .cta { display: block; width: 50%; margin: 0 auto; font-size: 18px; font-size: 1.8rem; }
 
 @media screen and (max-width: 768px) { 
-	.portfolio .current-projects .row .two-third .show-tablet,
-	.portfolio .current-projects .row .two-third .show-mobile { display: none; }
+    .portfolio .current-projects .row .two-third .show-tablet,
+    .portfolio .current-projects .row .two-third .show-mobile { display: none; }
 		
-	.portfolio .other-projects .row .project-img { max-width: 100%; max-height: inherit; height: auto; }
-	.portfolio .other-projects .row ul .element { display: inline-block; width: 49%; padding: 5%; float: none; vertical-align: middle; }
+    .portfolio .other-projects .row .project-img { max-width: 100%; max-height: inherit; height: auto; }
+    .portfolio .other-projects .row ul .element { display: inline-block; width: 49%; padding: 5%; float: none; vertical-align: middle; }
 }
 
-@media screen and (max-width: 480px){ 		
+@edia screen and (max-width: 480px){ 		
 	.portfolio .current-projects .row:nth-child(n) { position: relative; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
 	.portfolio .current-projects .row > .row-elem { width: 100%; }
 	.portfolio .current-projects .row > .row-elem:first-child { padding-bottom: 70px; }
