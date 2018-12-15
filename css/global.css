@@ -84,7 +84,7 @@ a:focus { color: #e64b4b; }
 a.button,
 button.button { position: relative; background: #080808; border: none; outline: none; border-radius: 5px; color: #ffffff; padding: 10px; text-decoration: none; cursor: pointer; }
 a.button:after,
-button.button:after { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background: #5887FF; color: #080808; transition: width 0.3s; }
+button.button:after { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background: #5887FF; color: #080808; -webkit-transition: width 0.3s; -o-transition: width 0.3s; transition: width 0.3s; }
 a.button:hover:after,
 button.button:hover:after,
 a.button:focus:after,
@@ -115,7 +115,35 @@ button.button:focus span{ position: relative; z-index: 3; color: #080808; }
 
 .footer .footer-desc p { color: #ffffff; margin: 0; }
 
+/* keyframes
+   --------- */
+/* header cub animation */
+@-webkit-keyframes spin { 
+    0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
+    100% { -webkit-transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); }
+}
 
-@media screen and (max-width: 768px) {
-    
+@keyframes spin { 
+    0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
+    100% { -webkit-transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); transform: rotate3d(1,1,1,60deg) translate3d(200px,0,0) rotateY(360deg); }
+}
+
+@-webkit-keyframes fixedSpin { 
+  0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
+  100% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); }
+}
+
+@keyframes fixedSpin { 
+  0% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(0deg); }
+  100% { -webkit-transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); transform: rotate3d(1,1,1,0deg) translate3d(200px,0,0) rotateY(720deg); }
+}
+  
+@-webkit-keyframes increaseOpacity { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@keyframes increaseOpacity { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
