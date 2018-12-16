@@ -10,13 +10,13 @@
                 },
                 events: function () {
                     // desktop navigation			
-                    navObj.cache.$navHolder.find('.nav-elem').on({
+                    navObj.cache.$navHolder.find('.nav-anchor').on({
                         mouseenter: function () {
-                            var $thisNavElem = $(this);
+                            var $thisNavAnchor = $(this);
 
                             clearTimeout(navObj.cache.mouseEnterTimer);
                             navObj.cache.mouseEnterTimer = setTimeout(function () {
-                                $thisNavElem.addClass('active').siblings().removeClass('active');
+                                $thisNavAnchor.parent().addClass('active').siblings().removeClass('active');
                             }, msp.cache.timer.fast);
                         },
                         click: function () {
@@ -25,19 +25,28 @@
                             clearTimeout(navObj.cache.clickTimer);
                             navObj.cache.clickTimer = setTimeout(function () {
                                 $thisNavElem.addClass('active').siblings().removeClass('active');
+                                msp.cache.$header.removeClass('mobile-nav');
+                                msp.cache.$headerNav.removeClass('shadow');
                             }, msp.cache.timer.fast);
                         }
                     });
 
                     // mobile navigation
                     msp.cache.$header.find('.burger-menu').on('click', function () {
-                        var $thisBurgerMenu = $(this);
+                        if (!msp.cache.$header.hasClass('mobile-nav')) {
+                            navObj.cache.$navHolder.find('.nav-elem').removeClass('anim');
+                        }
 
-                        // avoid multiple clicks
                         clearTimeout(navObj.cache.mobileClickTimer);
                         navObj.cache.mobileClickTimer = setTimeout(function () {
-                            $thisBurgerMenu.toggleClass('open');
-                            msp.cache.$header.toggleClass('shadow');
+                            msp.cache.$header.toggleClass('mobile-nav');
+                            msp.cache.$headerNav.toggleClass('shadow');
+
+                            if (msp.cache.$header.hasClass('mobile-nav')) {
+                                msp.helpers.animateElemInView();
+                            } else {
+                                navObj.cache.$navHolder.find('.nav-elem').removeClass('anim');
+                            }
                         }, msp.cache.timer.fast)
                     });
 
@@ -55,6 +64,6 @@
     };
 
     $(document).ready(function () {
-        msp.cache.$header.find('.nav').each(navMod);
+        msp.cache.$headerNav.each(navMod);
     });
 })(jQuery);
