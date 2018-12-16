@@ -85,12 +85,12 @@
 		<section class="about-me mod module" id="about-me">
 			<div class="holder cf">
 				<h2 class="title line-decoration">About me</h2>
-				<div class="image-element left one-third">
+				<div class="image-holder left one-third">
 					<figure class="overlay">
-						<img src="images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
+						<img class="img" src="images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
 					</figure>
 				</div>
-				<div class="text-element left two-third">
+				<div class="desc left two-third">
 					<h3 class="sub-title">Hello,</h3>
 					<p class="text">My name is Mare Sergiu, I am a Front-End Developer. I would describe myself as being a mixture of
 						the following principles, strong work ethic, continuous learning and a pleasant personality. I do believe that
@@ -115,8 +115,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Usig Photoshop to code creating Pixel perfect rich interactive pages.</p>
-								<p class="duty-details">Keen eye for detail and understanding of design/ UX principles.</p>
+								<p class="text">Usig Photoshop to code creating Pixel perfect rich interactive pages.</p>
+								<p class="text">Keen eye for detail and understanding of design/ UX principles.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -125,8 +125,17 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Expert in writing semantic HTML5, CSS3 and modern JavaScript,jQuery.</p>
-								<p class="duty-details">Experience with CMS as Sitecore and Umbraco.</p>
+								<p class="text">Expert in writing semantic HTML5, CSS3 and modern JavaScript,jQuery.</p>
+								<p class="text">Experience with CMS as Sitecore and Umbraco.</p>
+							</span>
+						</li>
+						<li class="duty">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="text duty-details">
+								<p class="text">Work comfortably with version control system (Git).</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -135,7 +144,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p> Work comfortably with version control system (Git).</p>
+								<p class="text">Using a JIRA ticket system.</p>
+								<p class="text">Working experience of the Agile development methodology.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -144,8 +154,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Using a JIRA ticket system.</p>
-								<p class="duty-details">Working experience of the Agile development methodology.</p>
+								<p class="text">Cross browser development & fixing bugs.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -154,7 +163,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Cross browser development & fixing bugs.</p>
+								<p class="text">FE and BE integration.</p>
+								<p class="text">Developing in a C# environment.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -163,19 +173,9 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>FE and BE integration.</p>
-								<p class="duty-details">Developing in a C# environment.</p>
-							</span>
-						</li>
-						<li class="duty">
-							<span class="icon">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
-									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
-							</span>
-							<span class="duty-details">
-								<p>Work effectively in a team.</p>
-								<p class="duty-details">Estimate and code in that time frame.</p>
-								<p>Continuous development to improve out front end skills.</p>
+								<p class="text">Work effectively in a team.</p>
+								<p class="text">Estimate and code in that time frame.</p>
+								<p class="text">Continuous development to improve out front end skills.</p>
 							</span>
 						</li>
 					</ul>
@@ -491,8 +491,8 @@
 							<h3 class="skills-title sub-title">HTML5<h3>
 						</div>
 						<div>
-							<p class="skills-info">Developing semantic markup for the website's modules. Usage of data-attributes, to give
-								more control over the markup.</p>
+							<p class="skills-info text">Developing semantic markup for the website's modules. Usage of data-attributes, to
+								give more control over the markup.</p>
 						</div>
 					</div>
 				</div>
@@ -621,12 +621,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="holder">
-					<div class="mod">
-						<button class="cta load-projects">
-							<span>Load more projects</span>
-						</button>
-					</div>
+				<div class="align-center load-more">
+					<button class="cta load-projects">
+						<span>Load more projects</span>
+					</button>
 				</div>
 				<div class="other-projects">
 					<div class="row other-project cf">
@@ -713,18 +711,28 @@
 					</form>
 				</div>
 				<div class="one-third left">
-					<h4>Address:</h4>
-					<address>
-						19 flat 1 Pembury Road <br>
-						Southend on Sea, UK <br>
-					</address>
-					<h4>Phone:</h4>
-					<address>
-						07810788629<br>
-					</address>
-					<h4>E-mail:</h4>
-					<address>
-						mare.sergiu@gmail.com<br>
+					<address class="address-holder">
+						<dl>
+							<dt class="address-elem">
+								<p>Address</p>
+							</dt>
+							<dd class="address-desc">
+								<p>19 flat 1 Pembury Road</p>
+								<p>Southend on Sea, UK</p>
+							</dd>
+							<dt class="address-elem">
+								<p>Phone</p>
+							</dt>
+							<dd class="address-desc">
+								<p>07810788629</p>
+							</dd>
+							<dt class="address-elem">
+								<p>E-mail</p>
+							</dt>
+							<dd class="address-desc">
+								<p>mare.sergiu@gmail.com</p>
+							</dd>
+						</dl>
 					</address>
 				</div>
 			</div>

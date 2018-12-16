@@ -28,7 +28,8 @@ h6,
 p { padding: 0; margin: 0 0 20px 0; font-family: "Droid-Regular", serif; color: #181515; }
 p { margin: 0; font-family: "Cat-Regular", sans-serif; }
 ul,
-ol { margin: 0 0 20px 0; padding: 0; }
+ol,
+dl { margin: 0 0 20px 0; padding: 0; }
 ul li { display: inline-block; list-style-type: none; }
 a { display: inline-block; text-decoration: none; color: #181515; }
 a:hover,
@@ -50,7 +51,7 @@ figure { display: block; background: #ffffff; }
 .holder { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* spacing */
-.mod { padding: 50px 0; }
+.mod { padding: 40px 0; }
 .mod + .mod { padding-top: 0; }
 
 /* float */
@@ -70,12 +71,12 @@ figure { display: block; background: #ffffff; }
 .full-width { display: block; width: 100%; }
 
 /* horizontal-alignment */
-.center { text-align: center; }
+.align-center { text-align: center; }
 
 /* text */
-.title { font-size: 36px; padding-bottom: 20px; }
-.sub-title { font-size: 26px; padding-bottom: 20px; }
-.text { font-size: 18px; }
+.title { font-size: 36px; font-size: 3.6rem; padding-bottom: 20px; }
+.sub-title { font-size: 26px; font-size: 2.6rem; padding-bottom: 20px; }
+.text { font-size: 18px; font-size: 1.8rem; line-height: 32px; line-height: 3.2rem; }
 .line-decoration { padding: 10px; border-left: 5px solid #5887ff; }
 
 /* image/svg */
