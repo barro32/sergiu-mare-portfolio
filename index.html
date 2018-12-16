@@ -12,60 +12,52 @@
 	<link rel="shortcut icon" href="images/faviconMs.ico" type="image/x-icon">
 	<link rel="icon" href="images/faviconMs.ico" type="image/x-icon">
 
-	<!-- css style sheets -->
+	<!-- primary stylesheets -->
 	<link rel="stylesheet" href="css/libraries/hover.css" type="text/css">
 	<link rel="stylesheet" href="css/libraries/normalizer.css" type="text/css">
 	<link rel="stylesheet" href="css/global.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/hero-mod.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/about-mod.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/quote-mod.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/skills-mod.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/portfolio-mod.css" type="text/css" />
-	<link rel="stylesheet" href="css/modules/contact-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/nav-mod.css" type="text/css" />
 </head>
 
 <body>
 	<!-- header -->
-	<header class="header" id="header">
-		<div class="holder">
-			<img src="images/logoMS.png" class="hide logo" />
-			<!-- logo 3d element -->
-			<div class="complex-element">
-				<div class="wrap">
-					<div class="cube">
-						<div class="front">front</div>
-						<div class="middle">
-							<img src="images/logoMS.png" width="200px" />
-						</div>
-						<div class="back">back</div>
-						<div class="top">top</div>
-						<div class="bottom">bottom</div>
-						<div class="left">left</div>
-						<div class="right">right</div>
-					</div>
-				</div>
-			</div>
-			<!-- burger-menu -->
-			<div class="burger-menu">
-				<div class="top"></div>
-				<div class="middle"></div>
-				<div class="bottom"></div>
+	<header class="header module" id="site-header">
+		<div class="holder cf">
+			<div class="icon inline-bl left logo">
+				<div class="bg-gradient"></div>
+				<img class="img" src="images/logoMsProto.png" alt="logo" />
 			</div>
 			<!-- navigation -->
-			<nav class="navigation" role="navigation">
-				<ul class="nav-list">
-					<li><a href="#page-hero">Home</a></li>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact-me">Contact Me</a></li>
+			<nav class="nav right" role="navigation">
+				<!-- burger-menu -->
+				<div class="burger-menu">
+					<div class="top"></div>
+					<div class="middle"></div>
+					<div class="bottom"></div>
+				</div>
+				<ul class="nav-holder">
+					<li class="nav-elem active">
+						<a href="#page-hero">Home</a>
+					</li>
+					<li class="nav-elem">
+						<a href="#about-me">About Me</a>
+					</li>
+					<li class="nav-elem">
+						<a href="#skills">Skills</a>
+					</li>
+					<li class="nav-elem">
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-elem">
+						<a href="#contact-me">Contact Me</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<div id="main">
 		<!-- page hero -->
-		<section class="page-hero" id="page-hero">
+		<section class="page-hero module" id="page-hero">
 			<div class="holder">
 				<video autoplay loop muted class="page-hero-video" id="check-video">
 					<source src="images/video/page-hero-video.mp4" type="video/mp4">
@@ -89,17 +81,16 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- about-me -->
-		<section class="about-me mod" id="about-me">
+		<section class="about-me mod module" id="about-me">
 			<div class="holder cf">
 				<h2 class="title line-decoration">About me</h2>
-				<div class="image-element left one-third">
+				<div class="image-holder left one-third">
 					<figure class="overlay">
-						<img src="images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
+						<img class="img" src="images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
 					</figure>
 				</div>
-				<div class="text-element left two-third">
+				<div class="desc left two-third">
 					<h3 class="sub-title">Hello,</h3>
 					<p class="text">My name is Mare Sergiu, I am a Front-End Developer. I would describe myself as being a mixture of
 						the following principles, strong work ethic, continuous learning and a pleasant personality. I do believe that
@@ -124,8 +115,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Usig Photoshop to code creating Pixel perfect rich interactive pages.</p>
-								<p class="duty-details">Keen eye for detail and understanding of design/ UX principles.</p>
+								<p class="text">Usig Photoshop to code creating Pixel perfect rich interactive pages.</p>
+								<p class="text">Keen eye for detail and understanding of design/ UX principles.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -134,8 +125,17 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Expert in writing semantic HTML5, CSS3 and modern JavaScript,jQuery.</p>
-								<p class="duty-details">Experience with CMS as Sitecore and Umbraco.</p>
+								<p class="text">Expert in writing semantic HTML5, CSS3 and modern JavaScript,jQuery.</p>
+								<p class="text">Experience with CMS as Sitecore and Umbraco.</p>
+							</span>
+						</li>
+						<li class="duty">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="text duty-details">
+								<p class="text">Work comfortably with version control system (Git).</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -144,7 +144,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p> Work comfortably with version control system (Git).</p>
+								<p class="text">Using a JIRA ticket system.</p>
+								<p class="text">Working experience of the Agile development methodology.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -153,8 +154,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Using a JIRA ticket system.</p>
-								<p class="duty-details">Working experience of the Agile development methodology.</p>
+								<p class="text">Cross browser development & fixing bugs.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -163,7 +163,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>Cross browser development & fixing bugs.</p>
+								<p class="text">FE and BE integration.</p>
+								<p class="text">Developing in a C# environment.</p>
 							</span>
 						</li>
 						<li class="duty">
@@ -172,37 +173,25 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p>FE and BE integration.</p>
-								<p class="duty-details">Developing in a C# environment.</p>
-							</span>
-						</li>
-						<li class="duty">
-							<span class="icon">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
-									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
-							</span>
-							<span class="duty-details">
-								<p>Work effectively in a team.</p>
-								<p class="duty-details">Estimate and code in that time frame.</p>
-								<p>Continuous development to improve out front end skills.</p>
+								<p class="text">Work effectively in a team.</p>
+								<p class="text">Estimate and code in that time frame.</p>
+								<p class="text">Continuous development to improve out front end skills.</p>
 							</span>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-
 		<!-- quote -->
-		<section class="quote mod">
+		<section class="quote mod module">
 			<img src="images/coding.jpg" alt="background image" class="bg-img" />
 			<div class="holder">
 				<h2 class="title">“Dreams are extremely important. You can’t do it unless you imagine it.” <span class="full-width">George
 						Lucas</span></h2>
 			</div>
 		</section>
-
 		<!-- skills -->
-		<section class="skills mod" id="skills">
+		<section class="skills mod module" id="skills">
 			<div class=" holder">
 				<h2 class="title line-decoration">
 					Skills
@@ -502,16 +491,15 @@
 							<h3 class="skills-title sub-title">HTML5<h3>
 						</div>
 						<div>
-							<p class="skills-info">Developing semantic markup for the website's modules. Usage of data-attributes, to give
-								more control over the markup.</p>
+							<p class="skills-info text">Developing semantic markup for the website's modules. Usage of data-attributes, to
+								give more control over the markup.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- Portfolio -->
-		<section class="portfolio mod" id="portfolio">
+		<section class="portfolio mod module" id="portfolio">
 			<div class="holder">
 				<h2 class="title line-decoration">
 					Portfolio
@@ -633,12 +621,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="holder">
-					<div class="mod">
-						<button class="cta load-projects">
-							<span>Load more projects</span>
-						</button>
-					</div>
+				<div class="align-center load-more">
+					<button class="cta load-projects">
+						<span>Load more projects</span>
+					</button>
 				</div>
 				<div class="other-projects">
 					<div class="row other-project cf">
@@ -691,10 +677,8 @@
 				<div class="overlay"></div>
 			</div>
 		</section>
-
-
 		<!--Start Contact  -->
-		<section id="contact-me" class="contact-me mod">
+		<section class="contact-me mod module" id="contact-me">
 			<div class="holder cf">
 				<h2 class="title">Let's Keep In Touch!</h2>
 				<div class="two-third left contact-form">
@@ -727,29 +711,37 @@
 					</form>
 				</div>
 				<div class="one-third left">
-					<h4>Address:</h4>
-					<address>
-						19 flat 1 Pembury Road <br>
-						Southend on Sea, UK <br>
-					</address>
-					<h4>Phone:</h4>
-					<address>
-						07810788629<br>
-					</address>
-					<h4>E-mail:</h4>
-					<address>
-						mare.sergiu@gmail.com<br>
+					<address class="address-holder">
+						<dl>
+							<dt class="address-elem">
+								<p>Address</p>
+							</dt>
+							<dd class="address-desc">
+								<p>19 flat 1 Pembury Road</p>
+								<p>Southend on Sea, UK</p>
+							</dd>
+							<dt class="address-elem">
+								<p>Phone</p>
+							</dt>
+							<dd class="address-desc">
+								<p>07810788629</p>
+							</dd>
+							<dt class="address-elem">
+								<p>E-mail</p>
+							</dt>
+							<dd class="address-desc">
+								<p>mare.sergiu@gmail.com</p>
+							</dd>
+						</dl>
 					</address>
 				</div>
 			</div>
 		</section>
-
 		<!-- maps API -->
-		<div id="map"></div>
-
+		<div id="map" class="module"></div>
 	</div>
 	<!-- footer -->
-	<footer class="footer">
+	<footer class="footer module" id="site-footer">
 		<div class="holder cf">
 			<nav class="one-third element secondary-nav left">
 				<ul class="nav-list">
@@ -772,11 +764,18 @@
 			</nav>
 			<article class="two-third footer-desc left">
 				<div class="desc">
-					<p class="text">&copy; Mare Sergiu - Front-End Developer - <span class="year"></span> All rights reserved<p>
+					<p class="text">&copy; Mare Sergiu - Front-End Developer - 2018 | All rights reserved<p>
 				</div>
 			</article>
 		</div>
 	</footer>
+	<!-- secondary stylesheets -->
+	<link rel="stylesheet" href="css/modules/hero-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/about-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/quote-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/skills-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/portfolio-mod.css" type="text/css" />
+	<link rel="stylesheet" href="css/modules/contact-mod.css" type="text/css" />
 
 	<!--js libraies-->
 	<script src="script/libraries/toolkit.min.js"></script>
@@ -784,6 +783,7 @@
 	<script src="script/libraries/jparticle.jquery.min.js"></script>
 	<script src="script/main.js"></script>
 	<script src="script/modules/map-mod.js"></script>
+	<script src="script/modules/nav-mod.js"></script>
 
 	<script src="script/contact/jqBootstrapValidation.js"></script>
 	<script src="script/contact/contact_me.js"></script>

@@ -7,7 +7,6 @@
 .skills .skills-tiles .element { position: relative; display: table-cell; width: auto; padding: 0px 40px; text-align: center; }
 .skills .skills-tiles .element:after { content: ""; position: absolute; top: 0; right: 0; width: 2px; height: 100%; background: #5887ff; }
 .skills .skills-tiles .element:last-of-type:after { opacity: 0; }
-.skills .skills-tiles .element .icon svg { max-width: 75px; width: 75px; max-height: 75px; height: 75px; }
 .skills .skills-description { position: relative; overflow: hidden; padding: 50px 20px; z-index: 1; }
 .skills .skills-description .sub-title { color: #ffffff; }
 .skills .skills-description .element { position: relative; float: left; display: inline-block; border: 4px solid #ffffff; overflow: hidden; }
