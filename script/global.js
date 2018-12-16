@@ -39,6 +39,8 @@ $(document).ready(function () {
 
     // animate the elements that are in the viewport on load
     msp.helpers.animateElemInView();
+
+    // scroll into the target area
     msp.helpers.scrollIntoView();
 
     // writeNameOnPageHolder
