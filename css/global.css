@@ -99,11 +99,11 @@ svg { width: 100%; height: auto; }
 /* modules
    ------- */
 /* header */
-.header { position: absolute; top: 0; left: 0; width: 100%; background: radial-gradient(rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,1)); z-index: 4; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+.header { position: absolute; top: 0; left: 0; width: 100%; background: -webkit-radial-gradient(rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,1)); background: -o-radial-gradient(rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,1)); background: radial-gradient(rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,0.6), rgba(8,8,8,1)); z-index: 4; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 .header .holder { position: relative; }
-.header .holder .logo { position: absolute; top: 50%; transform: translateY(-50%); z-index: 4; }
+.header .holder .logo { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 4; }
 .header .holder .logo .img { position: relative; z-index: 2; }
-.header .holder .logo .bg-gradient { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 1px); z-index: 1; animation: msp-mod-header-logoBackground 10s infinite linear; }
+.header .holder .logo .bg-gradient { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 1px); z-index: 1; -webkit-animation: msp-mod-header-logoBackground 10s infinite linear; animation: msp-mod-header-logoBackground 10s infinite linear; }
 .header.shadow { border: none; }
 .header.shadow:after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: #000000; opacity: 0.3; z-index: 2; }
 .header.shadow:before { height: calc(100vh - 77px); background: #5887ff }
@@ -126,6 +126,16 @@ svg { width: 100%; height: auto; }
 /* keyframes
    --------- */
 /* header logo animation */
+@-webkit-keyframes msp-mod-header-logoBackground { 
+  0% { background: #ffffff; }
+  12.5% { background: #83a9ff; }
+  25% { background: #6F99FF; }
+  50% { background: #ffffff; }
+  75% { background: #5887FF; }
+  90% { background: #00ADC7; }
+  100% { background: #ffffff; }
+}
+
 @keyframes msp-mod-header-logoBackground { 
   0% { background: #ffffff; }
   12.5% { background: #83a9ff; }
