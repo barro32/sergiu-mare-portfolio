@@ -35,7 +35,7 @@
 .portfolio .current-projects .row .one-third .holder-image-text { padding-top: 20px; overflow: hidden; }
 .portfolio .current-projects .row .one-third .holder-image-text .sub-title { position: relative; z-index: 1; } 
 
-.portfolio .desc { position: fixed; top: 50%; left: 50%; display: none; max-width: 600px; width: 80vw; max-height: 70vh; -webkit-transform: translate3D(-50%,-50%,0); -ms-transform: translate3D(-50%,-50%,0); transform: translate3D(-50%,-50%,0); z-index: 3; background: #ffffff; text-align: center; overflow-y: scroll; border-radius: 25px; }
+.portfolio .desc { position: fixed; top: 50%; left: 50%; display: none; max-width: 600px; width: 80vw; max-height: 70vh; -webkit-transform: translate3d(-50%,-50%,0); -ms-transform: translate3d(-50%,-50%,0); transform: translate3d(-50%,-50%,0); z-index: 3; background: #ffffff; text-align: center; overflow-y: scroll; border-radius: 25px; }
 .portfolio .desc .desc-header,
 .portfolio .desc .desc-footer { position: relative; padding: 20px 0; background: #5887ff; }
 .portfolio .desc .desc-footer { padding-top: 30px; }

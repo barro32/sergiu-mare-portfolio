@@ -1,5 +1,4 @@
 (function ($) {
-    // navigation
     function navMod() {
         var $thisNav = $(this),
             navObj = {
@@ -13,22 +12,24 @@
                     // desktop navigation			
                     navObj.cache.$navHolder.find('.nav-elem').on({
                         mouseenter: function () {
-                            var $this = $(this);
+                            var $thisNavElem = $(this);
 
                             clearTimeout(navObj.cache.mouseEnterTimer);
                             navObj.cache.mouseEnterTimer = setTimeout(function () {
-                                $this.addClass('active').siblings().removeClass('active');
+                                $thisNavElem.addClass('active').siblings().removeClass('active');
                             }, msp.cache.timer.fast);
                         },
                         click: function () {
+                            var $thisNavElem = $(this);
+
                             clearTimeout(navObj.cache.clickTimer);
                             navObj.cache.clickTimer = setTimeout(function () {
-                                $this.addClass('active').siblings().removeClass('active');
+                                $thisNavElem.addClass('active').siblings().removeClass('active');
                             }, msp.cache.timer.fast);
                         }
                     });
 
-                    // burger menu
+                    // mobile navigation
                     msp.cache.$header.find('.burger-menu').on('click', function () {
                         var $thisBurgerMenu = $(this);
 
