@@ -1,0 +1,6 @@
+{
+    "title": "Resolute property studio",
+    "info": "This website is a tool for banks/companies that have a portfolio of investments assets. The investors will be able to filter the database and see all details related to that asset. They can request to be contacted with the help of a form and receive a phone call from the company that provided this application.",
+    "skills": "From a design point of view, I had to do the UX journey with the client, and also to create a design in a photoshop. This web application was built with HTML5, CSS3, Javaassets/scripts/Jquery, Rest API and Firebase. This project is fully responsive and compatible with Chrome, Firefox, and IE11+. The application uses one API for implementation. All the back-end in handled through firebase, saving data, hoisting, retrieving data and sending emails.",
+    "url": "https://olimpus-front-end.firebaseapp.com"
+}
