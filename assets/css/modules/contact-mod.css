@@ -1,0 +1,20 @@
+/* contact module*/
+.contact-me { background: #5887ff; }
+.contact-me .contact-form input { width: calc(100% - 100px); padding: 5px 10px; border-radius: 5px; margin-bottom: 5px; }
+.contact-me .contact-form textarea { width: calc(100% - 100px); min-height: 200px; padding: 5px 10px; border-radius: 5px; margin-bottom: 5px; }
+.contact-me .contact-form .holder-button { width: calc(100% - 100px); text-align: right; }
+.contact-me .address-holder { display: inline-block; }
+.contact-me .address-holder .address-elem { padding: 20px 0 10px; }
+.contact-me .address-holder .address-elem:first-child { padding-top: 0; }
+.contact-me .address-holder .address-desc { padding: 0 0 20px 20px; margin: 0; border-bottom: 1px solid #ffffff; }
+.contact-me .address-holder .address-desc:last-of-type { border-bottom: 0; }
+.contact-me .address-holder .address-desc p { font-family: "Cat-SemiBold", sans-serif; }
+.contact-me.mod { padding-top: 50px; }
+
+@media screen and (max-width: 768px) { 
+   .contact-me .two-third,
+   .contact-me .one-third,
+   .contact-me .contact-form input,
+   .contact-me .contact-form textarea,
+   .contact-me .contact-form .holder-button { width: 100%; }
+}

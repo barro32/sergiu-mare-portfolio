@@ -1,3 +1,0 @@
-light blue = #5887FF   rgba(88, 135, 255,1)
-very liht blue = #adc2f7
-black = #080808;
