@@ -8,7 +8,7 @@
             },
             presentation: {
                 doneAjaxCall: function (response) {
-                    var parsedResponse = typeof response === 'string' ? JSON.parse(response) : reponse;
+                    var parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
 
                     msp.cache.$lightBox.find('.box-body').html(msp.helpers.generateTemplate('#portfolio-light-box', parsedResponse));
                 },
