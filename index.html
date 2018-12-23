@@ -482,22 +482,6 @@
 						</ul>
 					</div>
 				</div>
-				<section class="desc">
-					<header class="desc-header">
-						<div class="close-button">
-						</div>
-					</header>
-					<section class="desc-body mod">
-						<h5 class="modal-title">The name of the project</h5>
-						<p class="modal-text">About the poject and technologies which were used to develop the website</p>
-						<p class="modal-skills">What did you learn and ho did you improved my skills</p>
-						<a href="#" class="cta">
-							<span>Visit site</span>
-						</a>
-					</section>
-					<footer class="desc-footer"></footer>
-				</section>
-				<div class="overlay"></div>
 			</div>
 		</section>
 		<!--Start Contact  -->
@@ -562,7 +546,15 @@
 		</section>
 		<!-- maps API -->
 		<div id="map" class="module"></div>
-		<div class="light-box"></div>
+		<div class="light-box">
+			<div class="holder">
+				<header class="box-header">
+					<span class="close-button"></span>
+				</header>
+				<div class="box-body"></div>
+				<footer class="box-footer"></footer>
+			</div>
+		</div>
 	</div>
 	<!-- footer -->
 	<footer class="footer module" id="site-footer">
@@ -594,18 +586,20 @@
 		</div>
 	</footer>
 	<script id="portfolio-light-box" type="text/x-handlebars-template">
-		<header class="box-header">
-		  <span class="close-button"></span>
-		</header>
-		<section class="box-body padding-module">
-		  <h2 class="title">{{title}}</h2>
-		  <p class="text">{{info}}</p>
-		  <p class="text">{{skills}}</p>
-		  <a href={{url}} class="button">
-			<span>Visit site</span>
-		  </a>
-		</section>
-		<footer class="box-footer"></footer>		 
+		{{#if title.length}}
+		    <h2 class="title">{{title}}</h2>
+		{{/if}}
+		{{#if info.length}}
+            <p class="text">{{info}}</p>
+		{{/if}}
+		{{#if skills.length}}
+		    <p class="text">{{skills}}</p>
+		{{/if}}
+		{{#if url.length}}
+		    <a href={{url}} class="cta">
+		        <span>Visit site</span>
+		    </a>`
+		{{/if}}
 	</script>
 
 	<!-- secondary stylesheets -->

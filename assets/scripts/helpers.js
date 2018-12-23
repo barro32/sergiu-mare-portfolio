@@ -110,7 +110,7 @@ msp.helpers = {
         return filtersObj;
     },
     // standard ajax call
-    ajaxCall: function (typeOfRequest, url, data, doneMethod, failMethod) {
+    ajaxCall: function (typeOfRequest, url, data, doneMethod, failMethod, completedMethod) {
         $.ajax({
             method: typeOfRequest,
             url: url,
@@ -119,6 +119,8 @@ msp.helpers = {
             doneMethod(response);
         }).fail(function (response) {
             failMethod(response);
+        }).always(function () {
+            completedMethod();
         });
     },
     // change the url 

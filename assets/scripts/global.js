@@ -36,7 +36,7 @@ $(document).ready(function () {
     msp.cache.$headerNav = msp.cache.$header.find('.nav');
     msp.cache.$footer = msp.cache.$body.find('#site-footer');
     msp.cache.$main = msp.cache.$body.find('#main');
-    msp.cache.$lightBox = msp.cache.$body.find('#main').find('.light-box');
+    msp.cache.$lightBox = msp.cache.$main.find('.light-box');
 
     // animate the elements that are in the viewport on load
     msp.helpers.animateElemInView();

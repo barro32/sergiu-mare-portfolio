@@ -2,7 +2,6 @@
 .portfolio { overflow: hidden; }
 .portfolio .holder .my-project-title { font-size: 22px; font-size: 2.2rem; }
 .portfolio .holder .load-more { padding-top: 40px; }
-.portfolio .overlay { position: fixed; top: 0; left: 0; display: none; width: 100vw; height: 100vh; background: #080808; opacity: 0.5; z-index: 1; }
 .portfolio .btn-holder { text-align: left; }
 .portfolio .btn-holder .cta { min-width: 80%; }
 .portfolio .two-third { position: relative; }
@@ -43,7 +42,7 @@
     .portfolio .other-projects .row ul .element { display: inline-block; width: 49%; padding: 5%; float: none; vertical-align: middle; }
 }
 
-@edia screen and (max-width: 480px){ 		
+@edia screen and (max-width: 480px){ 
 	.portfolio .current-projects .row:nth-child(n) { position: relative; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
 	.portfolio .current-projects .row > .row-elem { width: 100%; }
 	.portfolio .current-projects .row > .row-elem:first-child { padding-bottom: 70px; }

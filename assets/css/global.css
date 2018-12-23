@@ -130,19 +130,21 @@ svg { width: 100%; height: auto; }
 .footer .footer-desc p { color: #ffffff; margin: 0; }
 
 /* light box */
-.light-box { position: fixed; top: 50%; left: 50%; display: none; max-width: 600px; width: 80vw; max-height: 2000px; height: calc(100vh - 200px); -webkit-transform: translate3d(-50%,-50%,0); -ms-transform: translate3d(-50%,-50%,0); transform: translate3d(-50%,-50%,0); z-index: 3; background: #ffffff; text-align: center; overflow-y: scroll; border-radius: 25px; }
-.light-box .box-header,
-.light-box .box-footer { position: relative; padding: 20px 0; background: #5887ff; }
-.light-box .box-footer { padding-top: 30px; }
-.light-box .box-header .close-button { position: relative; left: calc(100% - 80px); width: 40px; height: 40px; cursor: pointer; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
-.light-box .box-header .close-button:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
-.light-box .box-header .close-button:after,
-.light-box .box-header .close-button:before { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 3px; background: #080808; -webkit-transform: translateY(-50%) rotate(45deg); -ms-transform: translateY(-50%) rotate(45deg); transform: translateY(-50%) rotate(45deg); }
-.light-box .box-header .close-button:before { -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
-.light-box .box-body { padding: 50px 20px; }
-.light-box .box-body .title { margin: 0; padding-bottom: 20px; font-size: 28px; font-size: 2.8rem; }
-.light-box .box-body .text { margin: 0; padding: 0 0 20px; font-size: 18px; font-size: 1.8rem; }
-.light-box .box-body .cta { display: block; width: 50%; margin: 0 auto; font-size: 18px; font-size: 1.8rem; }
+.light-box { position: fixed; top: 0; left: 0; display: none; width: 100vw; height: 100vh; z-index: 3; text-align: left; }
+.light-box:after { content: ''; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #080808; opacity: 0.5; z-index: 1; }
+.light-box .holder { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 600px; width: 80vw; padding: 0; z-index: 2; border-radius: 5px; overflow: hidden; }
+.light-box .holder .box-header,
+.light-box .holder .box-footer { position: relative; padding: 30px 0; text-align: right; background: #5887ff; }
+.light-box .holder .box-footer { padding-top: 30px; }
+.light-box .holder .box-header .close-button { position: absolute; top: 50%; right: 20px; display: inline-block; width: 30px; height: 30px; cursor: pointer; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+.light-box .holder .box-header .close-button:hover { -webkit-transform: translateY(-50%) rotate(180deg); -ms-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg); }
+.light-box .holder .box-header .close-button:after,
+.light-box .holder .box-header .close-button:before { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 3px; background: #080808; -webkit-transform: translateY(-50%) rotate(45deg); -ms-transform: translateY(-50%) rotate(45deg); transform: translateY(-50%) rotate(45deg); border-radius: 5px; }
+.light-box .holder .box-header .close-button:before { -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
+.light-box .holder .box-body { padding: 40px; max-height: 500px; max-height: calc(100vh - 300px); overflow-y: scroll; background: #ffffff; }
+.light-box .holder .box-body .title { margin: 0; padding-bottom: 20px; font-size: 28px; font-size: 2.8rem; }
+.light-box .holder .box-body .text { margin: 0; padding: 0 0 20px; font-size: 18px; font-size: 1.8rem; }
+.light-box .holder .box-body .cta { display: block; width: 50%; margin: 0 auto; font-size: 18px; font-size: 1.8rem; text-align: center; }
 
 /* keyframes
    --------- */
