@@ -6,14 +6,11 @@
             cache: {
                 toggleLightBox: {}
             },
-            data: {
-                getJsonFile: function () {
-
-                }
-            },
             presentation: {
                 doneAjaxCall: function (response) {
-                    msp.cache.$lightBox.find('.box-body').html(msp.helpers.generateTemplate('#portfolio-light-box', response));
+                    var parsedResponse = typeof response === 'string' ? JSON.parse(response) : reponse;
+
+                    msp.cache.$lightBox.find('.box-body').html(msp.helpers.generateTemplate('#portfolio-light-box', parsedResponse));
                 },
                 failedAjaxCall: function (response) {
                     msp.cache.$lightBox.find('.box-body').html(msp.helpers.generateTemplate('#portfolio-light-box', {
