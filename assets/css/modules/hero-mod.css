@@ -4,9 +4,7 @@
 .page-hero .page-hero-img,
 .page-hero .page-hero-video { position: absolute; top: 0; left: 50%; min-width: 100%; min-height: 100%; max-width: initial; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .page-hero .page-hero-message { position: relative; top: 50vh; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 2; color: #ffffff; text-align: center; }
-.page-hero .page-hero-message span { font-size: 60px; font-size: 6rem; font-family: "Droid-Bold", serif; }
-.page-hero .page-hero-message h1 > span { color: transparent; -webkit-transition: 1s; -o-transition: 1s; transition: 1s; }
-.page-hero .page-hero-message span.visible { color: #ffffff; }
+.page-hero .page-hero-message .title span { font-size: 60px; font-size: 6rem; font-family: "Droid-Bold", serif; color: #ffffff; -webkit-transition: 1s; -o-transition: 1s; transition: 1s; }
 
 @media screen and (max-width: 1400px) { 
     .page-hero .page-hero-img { left: 0; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }	

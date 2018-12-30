@@ -25,7 +25,8 @@ h3,
 h4,
 h5,
 h6,
-p { padding: 0; margin: 0 0 20px 0; font-family: "Droid-Regular", serif; color: #181515; }
+p { padding: 0; margin: 0 0 40px 0; font-family: "Droid-Regular", serif; color: #181515; }
+
 p { margin: 0; font-family: "Cat-Regular", sans-serif; }
 ul,
 ol,
@@ -35,7 +36,6 @@ a { display: inline-block; text-decoration: none; color: #181515; }
 a:hover,
 a:focus { color: #e64b4b; }
 
-/* browsers that don't support HTML5 */
 header, 
 section, 
 footer, 
@@ -43,7 +43,7 @@ aside,
 nav, 
 main, 
 article, 
-figure { display: block; background: #ffffff; }
+figure { background: #ffffff; margin: 0; }
 
 /* helper classes
    -------------- */
@@ -78,8 +78,8 @@ figure { display: block; background: #ffffff; }
 .align-center { text-align: center; }
 
 /* text */
-.title { font-size: 36px; font-size: 3.6rem; padding-bottom: 20px; }
-.sub-title { font-size: 26px; font-size: 2.6rem; padding-bottom: 20px; }
+.title { font-size: 36px; font-size: 3.6rem; padding-bottom: 0; }
+.sub-title { font-size: 26px; font-size: 2.6rem; padding-bottom: 0; }
 .text { font-size: 18px; font-size: 1.8rem; line-height: 32px; line-height: 3.2rem; }
 .line-decoration { padding: 10px; border-left: 5px solid #5887ff; }
 

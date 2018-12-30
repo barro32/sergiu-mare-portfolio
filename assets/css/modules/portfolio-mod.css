@@ -7,8 +7,8 @@
 .portfolio .two-third { position: relative; }
 .portfolio .two-third.left + .one-third .holder-image-text { text-align: right; padding-top: 20px; }
 .portfolio .current-projects .row .funky-arrow { position: relative; z-index: 0; }
-.portfolio .current-projects .row:nth-child(2n+1) .funky-arrow { -webkit-transform: rotateY(348deg) rotateX(185deg) rotateZ(-39deg) translateY(20px); transform: rotateY(348deg) rotateX(185deg) rotateZ(-39deg) translateY(20px); }
-.portfolio .current-projects .row:nth-child(2n+2) .funky-arrow { -webkit-transform: rotateY(180deg) rotateX(185deg) rotateZ(-39deg) translateY(20px); transform: rotateY(180deg) rotateX(185deg) rotateZ(-39deg) translateY(20px); }
+.portfolio .current-projects .row .funky-arrow { width: auto; max-height: 200px; }
+.portfolio .current-projects .row:nth-child(2n+1) .funky-arrow { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
 
 .portfolio .other-projects { display: none; }
 .portfolio .other-projects .row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 50px 0 0 0; }
