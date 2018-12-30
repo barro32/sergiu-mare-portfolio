@@ -35,7 +35,7 @@ a { display: inline-block; text-decoration: none; color: #181515; }
 a:hover,
 a:focus { color: #e64b4b; }
 
-/* browsers that don"t support HTML5 */
+/* browsers that don't support HTML5 */
 header, 
 section, 
 footer, 
@@ -49,6 +49,11 @@ figure { display: block; background: #ffffff; }
    -------------- */
 /* holders */
 .holder { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* display type */
+.bl { display: block; }
+.inline-bl { display: inline-block; }
+.equal-height { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 /* spacing */
 .mod { padding: 40px 0; }
