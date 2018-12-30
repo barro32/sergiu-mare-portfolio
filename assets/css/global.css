@@ -65,8 +65,7 @@ figure { display: block; background: #ffffff; }
 .cf:after { content: ""; clear: both; display: block; }
 
 /* hide/show */
-.hide { display: none; }
-.show { display: block; }
+.hidden-accesability { display: none; }
 
 /* grid */
 .quater { width: 25%; }
