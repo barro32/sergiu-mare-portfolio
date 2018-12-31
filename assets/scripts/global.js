@@ -44,56 +44,15 @@ $(document).ready(function () {
     // scroll into the target area
     msp.helpers.scrollIntoView();
 
-    // writeNameOnPageHolder
-    function writeText() {
-        var name = "Sergiu Mare",
-            job = "Front-End Developer",
-            sirName = [],
-            sirJob = [],
-            $hero = $('.page-hero'),
-            $heroName = $hero.find('.page-hero-message .page-hero-message-name'),
-            $heroJob = $hero.find('.page-hero-message .page-hero-message-job'),
-            sirName = name.split(""),
-            sirJob = job.split(""),
-            emptyStringName = [],
-            emptyStringJob = [],
-            i = 0,
-            j = 0,
-            startNameInterval;
-
-        // make the braces visible
-        $hero.find('span.show').addClass('visible');
-
-        // initialise the name and the job description	
-        setTimeout(function () {
-            startNameInterval = setInterval(function () {
-                if (i < sirName.length) {
-                    emptyStringName += sirName[i];
-                    $heroName.text("" + emptyStringName + "");
-                    i++;
-                } else if (j < sirJob.length) {
-                    emptyStringJob += sirJob[j];
-                    $heroJob.text("" + emptyStringJob + "");
-                    j++;
-                } else {
-                    clearInterval(startNameInterval);
-                }
-            }, 150)
-        }, 1000)
-    }
-
     // window events
     // -------------
-    msp.cache.$window.on({
-        'scroll': function () {
-            msp.helpers.animateElemInView();
-        },
-        'load': function () {
-            // the text written on the page hero
-            $('.page-hero-message').each(writeText);
-            $('.page-hero video').get(0).play();
-        }
-    });
-
-    toolkit.scrollTimer.push(msp.helpers.fixedHeader);
+    if(msp.helpers.deviceWithTouch()){
+        msp.cache.$window.on({
+            'scroll': function (){
+                msp.helpers.animateElemInView();
+            }
+        });
+    }else{
+        toolkit.scrollTimer.push(msp.helpers.fixedHeader);
+    }    
 });
