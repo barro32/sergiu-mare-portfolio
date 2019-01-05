@@ -46,13 +46,14 @@ $(document).ready(function () {
 
     // window events
     // -------------
-    if(msp.helpers.deviceWithTouch()){
+    if (msp.helpers.deviceWithTouch()) {
         msp.cache.$window.on({
             'scroll': function (){
                 msp.helpers.animateElemInView();
+                msp.helpers.fixedHeader();
             }
         });
-    }else{
+    } else {
         toolkit.scrollTimer.push(msp.helpers.fixedHeader);
-    }    
+    }
 });
