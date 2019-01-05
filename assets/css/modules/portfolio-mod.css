@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 768px) {
 	.portfolio .current-projects .row:nth-child(n) { position: relative; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
-    .portfolio .current-projects .row .two-third .show-tablet,
+	.portfolio .current-projects .row .two-third .show-tablet,
 	.portfolio .current-projects .row .two-third .show-mobile { display: none; }
 	.portfolio .current-projects .row .one-third .holder-image-text { display: none; }
 	.portfolio .current-projects .row > .row-elem { width: 100%; }
