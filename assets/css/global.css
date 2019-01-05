@@ -154,7 +154,7 @@ svg { width: 100%; height: auto; }
 @media screen and (max-width: 768px) {
   .footer .secondary-nav,
   .footer .footer-desc { width: 100%; text-align: left; }
-  .footer .secondary-nav .nav-list { display: flex; justify-content: space-between; margin-bottom: 20px; }
+  .footer .secondary-nav .nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 20px; }
 }
 
 /* keyframes
