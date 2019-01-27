@@ -1,27 +1,24 @@
 /* about module */
 .about-me { overflow: hidden; }
-.about-me .image-holder { padding: 20px 0; }
-.about-me .image-holder .img { max-width: 200px; height: auto; margin-left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); border-radius: 35%; -webkit-box-shadow: 12px 0px 0px 12px rgba(13,113,165,0.2),-12px 0px 0px 12px rgba(109,139,232,0.2); box-shadow: 12px 0px 0px 12px rgba(13,113,165,0.2),-12px 0px 0px 12px rgba(109,139,232,0.2); ; }
-.about-me .desc .text { max-width: 600px; }
+.about-me .image-holder { margin: 0 60px 0 20px; }
+.about-me .image-holder .img { max-width: 200px; height: auto; border-radius: 35%; -webkit-box-shadow: 12px 0px 0px 12px rgba(13,113,165,0.2),-12px 0px 0px 12px rgba(109,139,232,0.2); box-shadow: 12px 0px 0px 12px rgba(13,113,165,0.2),-12px 0px 0px 12px rgba(109,139,232,0.2); }
+.about-me .desc { max-width: 800px; width: calc(100% - 300px); }
 .about-me .desc .download-wrapper { padding-top: 30px; }
 .about-me .desc .download-wrapper a { padding: 15px 50px; }
 
 .about-me .dialy-duties { width: 100%; }
 .about-me .dialy-duties .duty { display: inline-block; width: calc(50% - 30px); }
-.about-me .dialy-duties .duty .icon svg { -webkit-transform: rotate(45deg) translateY(10px);  -ms-transform: rotate(45deg) translateY(10px); transform: rotate(45deg) translateY(10px); width: 50px; height: 50px; }
+.about-me .dialy-duties .duty .icon svg { width: 25px; height: 25px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 .about-me .dialy-duties .duty:nth-child(even) { margin-right: 15px; }
 .about-me .dialy-duties .duty > span { display: inline-block; vertical-align: top; }
-.about-me .dialy-duties .duty .duty-details { width: calc(100% - 60px); padding: 20px 0; }
-.about-me .dialy-duties .duty .duty-details .text { padding-left: 40px; }
-
-@media screen and (max-width: 920px) {
-    .about-me .image-holder { width: 294px; }
-    .about-me .desc { width: calc(100% - 294px); }
-}
+.about-me .dialy-duties .duty .duty-details { width: calc(100% - 30px); padding: 0 0 20px 0; }
+.about-me .dialy-duties .duty .duty-details .text { padding-left: 20px; }
 
 @media screen and (max-width: 768px) {
+    .about-me .image-holder { margin: 0 0 50px 0; }
+    .about-me .image-holder .overlay { text-align: center; }
     .about-me .image-holder,
+    .about-me .desc { width: 100%; }
+    .about-me .desc .download-wrapper { text-align: right; }
     .about-me .dialy-duties .duty { width: 100%; }
-    .about-me .desc { width: 100%; text-align: center; }
-    .about-me .desc .text { max-width: 600px; margin: 0 auto; }
 }
