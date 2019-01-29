@@ -105,6 +105,11 @@ svg { width: 100%; height: auto; }
 .anim-mod.anim,
 .sub-anim-mod.anim { opacity: 1; }
 
+/* forms */
+.error { color: #ff0000; }
+.err-msgs [data-validation] { display: none; }
+.form-section-errors span:first-child:after { content: ' - '; }
+
 /* modules
    ------- */
 /* header */

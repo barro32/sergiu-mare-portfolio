@@ -13,8 +13,8 @@
 	<link rel="icon" href="assets/media/icons/favIcon.ico" type="image/x-icon">
 
 	<!-- primary stylesheets -->
-	<link rel="stylesheet" href="assets/css/libraries/hover.css" type="text/css">
-	<link rel="stylesheet" href="assets/css/libraries/normalizer.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/libs/normalizer.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/libs/stylish-forms.core.min.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/global.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/modules/nav-mod.css" type="text/css" />
 </head>
@@ -516,36 +516,72 @@
 			</div>
 		</section>
 		<!--Start Contact  -->
-		<section class="contact-me mod module" id="contact-me">
+		<section class="contact mod module" id="contact-me">
 			<div class="holder cf">
-				<h2 class="title">Get in touch</h2>
+				<h2 class="title">I'm here to help you</h2>
 				<div class="two-third left contact-form">
-					<form name="sentMessage" method="post" action="assets/scripts/contact/contact_me.php" id="contactForm" novalidate>
-						<div class="control-group">
-							<div class="controls ">
-								<input type="text" class="form-control" placeholder="Full Name" id="name" required
-								 data-validation-required-message="Please enter your name" />
-								<p class="help-block"></p>
-							</div>
+					<!-- form -->
+					<div class="mod-form cf" data-error-summary="true" data-instant-feedback="true" data-disable-submit="requiredonly"
+					 data-inline-errors="true" data-server-error-message="There was an error, please try again." data-stylish-form="true">
+
+						<!-- form section -->
+						<article class="form-section" data-batch-name="" data-endpoint="" data-partial-server-stepover="false">
+							<!-- form field -->
+							<form name="sentMessage" method="post" action="assets/scripts/contact/contact_me.php" id="contactForm">
+								<!-- name -->
+								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+									<label class="sub-title">Full name</label>
+									<input type="text" placeholder="ex: Jonh Doe" />
+
+									<!-- error messages -->
+									<div class="err-msgs">
+										<div data-validation="required">This field is REQUIRED - please enter some text</div>
+									</div>
+								</div>
+								<!-- phone -->
+								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+									<label class="sub-title">Phone number</label>
+									<input type="text" placeholder="ex: ++447810788623" />
+
+									<!-- error messages -->
+									<div class="err-msgs">
+										<div data-validation="required">This field is REQUIRED - please enter some text</div>
+									</div>
+								</div>
+								<!-- email -->
+								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required|regex"
+								 data-custom-regex="^^\S+@\S+\.\S+$">
+									<label class="sub-title" for="email">Email address</label>
+									<input type="text" placeholder="ex: jonh.doe@exemple.com" id="email" />
+
+									<!-- error messages -->
+									<div class="err-msgs">
+										<div data-validation="required">This field is REQUIRED - please enter some text</div>
+										<div data-validation="regex">Invalid email address</div>
+									</div>
+								</div>
+								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+									<label class="sub-title" for="textarea">Message</label>
+									<textarea id="textarea" placeholder="Please describe your need. Thank you!"></textarea>
+
+									<!-- error messages -->
+									<div class="err-msgs">
+										<div data-validation="required">This field is REQUIRED - please enter some text</div>
+									</div>
+								</div>
+							</form>
+						</article>
+						<div class="cf">
+							<!-- full form submit -->
+							<button class="cta full-submit right" disabled>
+								<span>Submit entire form</span>
+							</button>
+							<!-- full form clear -->
+							<button class="cta full-submit right" disabled>
+								<span>Clear form values</span>
+							</button>
 						</div>
-						<div class="control-group">
-							<div class="controls">
-								<input type="email" class="form-control" placeholder="Email" id="email" required
-								 data-validation-required-message="Please enter your email" />
-							</div>
-						</div>
-						<div class="control-group">
-							<div class="controls ">
-								<textarea class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message"
-								 placeholder="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters"
-								 maxlength="999" style="resize:none"></textarea>
-							</div>
-						</div>
-						<div id="success"></div> <!-- For success/fail messages -->
-						<div class="holder-button">
-							<button type="submit" class="cta not-active pull-right  hvr-push buttonSubmit">Send</button>
-						</div>
-					</form>
+					</div>
 				</div>
 				<div class="one-third left">
 					<address class="address-holder">
@@ -630,7 +666,7 @@
 		{{#if url.length}}
 		    <a href={{url}} class="cta">
 		        <span>Visit site</span>
-		    </a>`
+		    </a>
 		{{/if}}
 	</script>
 
@@ -646,6 +682,8 @@
 	<script src="assets/scripts/libs/toolkit.min.js"></script>
 	<script src="assets/scripts/libs/jquery-1.8.2.min.js"></script>
 	<script src="assets/scripts/libs/handlebars.js"></script>
+	<script src="assets/scripts/libs/form-validation.min.js"></script>
+	<script src="assets/scripts/libs/stylish-forms.min.js"></script>
 
 	<!-- js global -->
 	<script src="assets/scripts/global.js"></script>
@@ -657,9 +695,6 @@
 	<script src="assets/scripts/modules/nav-mod.js"></script>
 	<script src="assets/scripts/modules/portfolio-mod.js"></script>
 	<script src="assets/scripts/modules/skills-mod.js"></script>
-
-	<script src="assets/scripts/contact/jqBootstrapValidation.js"></script>
-	<script src="assets/scripts/contact/contact_me.js"></script>
 </body>
 
 </html>

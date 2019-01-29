@@ -44,11 +44,17 @@ $(document).ready(function () {
     // scroll into the target area
     msp.helpers.scrollIntoView();
 
+    // apply styling to all forms
+    stylishForms.apply();
+
+    // validate all sforms
+    formValidation.init();
+
     // window events
     // -------------
     if (msp.helpers.deviceWithTouch()) {
         msp.cache.$window.on({
-            'scroll': function (){
+            'scroll': function () {
                 msp.helpers.animateElemInView();
                 msp.helpers.fixedHeader();
             }
