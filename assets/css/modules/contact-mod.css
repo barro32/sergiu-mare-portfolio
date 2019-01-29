@@ -1,5 +1,5 @@
 /* contact module*/
-.contact { background: #5887ff; }
+.contact { background: rgba(88,135,255,0.8); }
 .contact .contact-form { padding-right: 40px; }
 .contact .contact-form .form-section { background: transparent; }
 .contact .contact-form .form-section .form-field { padding-bottom: 20px; }
