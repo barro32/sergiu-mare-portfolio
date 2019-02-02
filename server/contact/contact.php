@@ -16,7 +16,9 @@ $email_body = "You have received a new message. \n\n".
 $headers = "From: $to";	
 
 // send the email
-(mail($to,$email_subject,$email_body,$headers)); // send email
-header("Location: https://www.maresergiu.co.uk/#contact-me"); /* Redirect browser */
+(mail($to,$email_subject,$email_body,$headers)); 
+
+// redirect browser
+header("Location: https://www.maresergiu.co.uk/#contact-me"); 
 exit();
 ?>

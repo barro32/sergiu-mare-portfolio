@@ -17,13 +17,6 @@
 	<link rel="stylesheet" href="assets/css/libs/stylish-forms.core.min.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/global.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/modules/nav-mod.css" type="text/css" />
-
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init("user_feuyjhhzdzLUZa8aGZIAE");
-		})();
-	</script>
 </head>
 
 <body>
