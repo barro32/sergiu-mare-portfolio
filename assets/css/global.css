@@ -94,8 +94,10 @@ svg { width: 100%; height: auto; }
 .cta:hover:after,
 .cta:focus:after { width: 100%; border-radius: 5px; }
 .cta span { font-family: "Cat-SemiBold", sans-serif; }
-.cta:hover span,
-.cta:focus span { position: relative; z-index: 3; color: #080808; }
+.cta:not(.not-active):hover span,
+.cta:not(.not-active):focus span { position: relative; z-index: 3; color: #080808; }
+.cta.not-active:hover,
+.cta.not-active:focus { -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); }
 .cta.not-active:hover:after,
 .cta.not-active:focus:after { width: 0; }
 

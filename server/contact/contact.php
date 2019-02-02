@@ -8,19 +8,21 @@ if(empty($_POST['name'])  		||
 	echo "No arguments Provided!";
 	return false;
    }
-	
+
 $name = $_POST['name'];
 $email_address = $_POST['email'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
-	
-// create email body and send it	
-$to = 'mare.sergiu@yahoo.com'; // ----->>> put your email to receive mails
+
+// create email body and send it
+$to = "mare.sergiu@gmail.com";
 $email_subject = "Contact form submitted by:  $name";
 $email_body = "You have received a new message. \n\n".
-				  " Here are the details:\n \nName: $name \n ".
-				  "Email: $email_address\n Message \n $message";
+				  "Here are the details:\n \nName: $name \n ".
+              "Email: $email_address\n Message \n $message";
+              "Phone: $phone\n Message \n $phone";
 $headers = "From: info@maresergiu.co.uk\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
-return true;			
+return true;
 ?>

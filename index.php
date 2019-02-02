@@ -17,6 +17,13 @@
 	<link rel="stylesheet" href="assets/css/libs/stylish-forms.core.min.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/global.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/modules/nav-mod.css" type="text/css" />
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_feuyjhhzdzLUZa8aGZIAE");
+		})();
+	</script>
 </head>
 
 <body>
@@ -527,11 +534,11 @@
 						<!-- form section -->
 						<article class="form-section" data-batch-name="" data-endpoint="" data-partial-server-stepover="false">
 							<!-- form field -->
-							<form name="sentMessage" method="post" action="assets/scripts/contact/contact_me.php" id="contactForm">
+							<form name="sentMessage" method="post" action="assets/server/contact/contact.php" id="contactForm">
 								<!-- name -->
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Full name</label>
-									<input type="text" placeholder="ex: Jonh Doe" />
+									<input type="text" placeholder="ex: Jonh Doe" name="name" />
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -541,7 +548,7 @@
 								<!-- phone -->
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Phone number</label>
-									<input type="text" placeholder="ex: ++447810788623" />
+									<input type="text" placeholder="ex: ++447810788623" name="phone"/>
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -552,7 +559,7 @@
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required|regex"
 								 data-custom-regex="^^\S+@\S+\.\S+$">
 									<label class="sub-title" for="email">Email address</label>
-									<input type="text" placeholder="ex: jonh.doe@exemple.com" id="email" />
+									<input type="text" placeholder="ex: jonh.doe@exemple.com" id="email" name="email"/>
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -562,7 +569,7 @@
 								</div>
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title" for="textarea">Message</label>
-									<textarea id="textarea" placeholder="Please describe your need. Thank you!"></textarea>
+									<textarea type="text" id="textarea" placeholder="Please describe your need. Thank you!" name="message"></textarea>
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -573,12 +580,12 @@
 						</article>
 						<div class="cf">
 							<!-- full form submit -->
-							<button class="cta full-submit right" disabled>
-								<span>Submit entire form</span>
+							<button class="cta full-submit right not-active" disabled>
+								<span>Submit</span>
 							</button>
 							<!-- full form clear -->
-							<button class="cta full-submit right" disabled>
-								<span>Clear form values</span>
+							<button class="cta full-submit right not-active">
+								<span>Clear</span>
 							</button>
 						</div>
 					</div>
