@@ -1,13 +1,13 @@
 /* contact module*/
 .contact { background: rgba(88,135,255,0.8); }
-.contact .contact-form { padding-right: 40px; }
-.contact .contact-form .form-section { background: transparent; }
-.contact .contact-form .form-section .form-field { padding-bottom: 20px; }
-.contact .contact-form .form-section .form-field .sub-title { color: #000000; }
-.contact .contact-form .form-section .form-field > .stylish-text,
-.contact .contact-form .form-section .form-field > .stylish-textarea { background: #ffffff; border-radius: 5px; }
-.contact .contact-form .form-section .form-field > div > span { border: none; }
-.contact .contact-form .mod-form .cta { margin-left: 20px; }
+.contact .contact-holder { padding-right: 40px; }
+.contact .contact-holder .form-section { background: transparent; }
+.contact .contact-holder .form-section .form-field { padding-bottom: 20px; }
+.contact .contact-holder .form-section .form-field .sub-title { color: #000000; }
+.contact .contact-holder .form-section .form-field > .stylish-text,
+.contact .contact-holder .form-section .form-field > .stylish-textarea { background: #ffffff; border-radius: 5px; }
+.contact .contact-holder .form-section .form-field > div > span { border: none; }
+.contact .contact-holder .mod-form .cta { margin-left: 20px; }
 
 .contact .address-holder { display: inline-block; }
 .contact .address-holder .address-elem { padding: 20px 0 10px; }
@@ -21,5 +21,5 @@
 @media screen and (max-width: 768px) { 
    .contact .two-third,
    .contact .one-third,
-   .contact .contact-form .holder-button { width: 100%; }
+   .contact .contact-holder .holder-button { width: 100%; }
 }

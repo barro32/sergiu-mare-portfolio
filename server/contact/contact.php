@@ -24,5 +24,7 @@ $email_body = "You have received a new message. \n\n".
 $headers = "From: info@maresergiu.co.uk\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
-return true;
+
+header("Location: http://www.maresergiu.co.uk/#contact-me"); /* Redirect browser */
+exit();
 ?>

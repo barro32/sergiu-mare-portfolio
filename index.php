@@ -526,7 +526,7 @@
 		<section class="contact mod module" id="contact-me">
 			<div class="holder cf">
 				<h2 class="title">I'm here to help you</h2>
-				<div class="two-third left contact-form">
+				<div class="two-third left contact-holder">
 					<!-- form -->
 					<div class="mod-form cf" data-error-summary="true" data-instant-feedback="true" data-disable-submit="requiredonly"
 					 data-inline-errors="true" data-server-error-message="There was an error, please try again." data-stylish-form="true">
@@ -534,7 +534,7 @@
 						<!-- form section -->
 						<article class="form-section" data-batch-name="" data-endpoint="" data-partial-server-stepover="false">
 							<!-- form field -->
-							<form name="sentMessage" method="post" action="assets/server/contact/contact.php" id="contactForm">
+							<form class="contact-form" name="sentMessage" method="post" action="server/contact/contact.php">
 								<!-- name -->
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Full name</label>
@@ -702,6 +702,7 @@
 	<script src="assets/scripts/modules/nav-mod.js"></script>
 	<script src="assets/scripts/modules/portfolio-mod.js"></script>
 	<script src="assets/scripts/modules/skills-mod.js"></script>
+	<script src="assets/scripts/modules/contact-mod.js"></script>
 </body>
 
 </html>
