@@ -527,7 +527,7 @@
 						<!-- form section -->
 						<article class="form-section" data-batch-name="" data-endpoint="" data-partial-server-stepover="false">
 							<!-- form field -->
-							<form class="contact-form" name="sentMessage" method="post" action="server/contact/contact.php">
+							<form class="contact-form" name="sentMessage">
 								<!-- name -->
 								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Full name</label>
@@ -577,7 +577,7 @@
 								<span>Submit</span>
 							</button>
 							<!-- full form clear -->
-							<button class="cta full-submit right not-active">
+							<button class="cta form-clear right not-active">
 								<span>Clear</span>
 							</button>
 						</div>
