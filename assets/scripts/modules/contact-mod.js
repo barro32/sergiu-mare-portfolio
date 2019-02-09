@@ -18,14 +18,14 @@
                     });
 
                     msp.helpers.ajaxCall('POST', 'server/contact/send-email.php', { 'formData': formDataObj },
-                        function (r) {
-                            console.log(r);
+                        function (response) {
+                            // done scenario
                         },
-                        function (r) {
-                            console.log(r);
+                        function (response) {
+                            // fail scenario
                         },
-                        function () {
-
+                        function (response) {
+                            // completed request method
                         }
                     );
                 });

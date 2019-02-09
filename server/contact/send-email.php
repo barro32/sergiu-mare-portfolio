@@ -17,8 +17,9 @@ $emailBody = "You have received a new message. \n\n".
 $headers = "From: $to";	
 
 // send the email
-// (mail($to,$emailSubject,$emailBody,$headers)); 
-echo "Form send successfully";
+(mail($to,$emailSubject,$emailBody,$headers)); 
+
+echo 'ok';
 
 exit();
 ?>
