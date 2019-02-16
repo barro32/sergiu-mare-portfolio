@@ -167,6 +167,7 @@ msp.helpers = {
         $animElem.each(function () {
             var $thisAnimElem = $(this),
                 elemIsInView = msp.helpers.elemIsInView($thisAnimElem),
+                $dataDelay = $thisAnimElem.data('delay'),
                 parentDelay;
 
             function animSubElem($thisAnimElem) {
@@ -182,7 +183,7 @@ msp.helpers = {
 
             // when there are synchronous animations on the same line
             if (elemIsInView && $thisAnimElem.data('sync')) {
-                parentDelay = elemIsInView ? $thisAnimElem.data('delay') : 300;
+                parentDelay = typeof $dataDelay === 'undefined' ? 300 : $dataDelay;
 
                 // trigger parent animation
                 setTimeout(function () {

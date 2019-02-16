@@ -60,6 +60,7 @@ $(document).ready(function () {
             }
         });
     } else {
+        toolkit.scrollTimer.push(msp.helpers.animateElemInView);
         toolkit.scrollTimer.push(msp.helpers.fixedHeader);
     }
 });

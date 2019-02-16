@@ -7,7 +7,7 @@
 .nav .nav-holder .nav-elem a:before { content: ""; position: absolute; bottom: 0; right: 50%; height: 2px; background: #5887ff; width: 0; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 .nav .nav-holder .nav-elem.active a:after,
 .nav .nav-holder .nav-elem.active a:before { width: 50%; }
-.nav .nav-holder .nav-elem.anim { -webkit-animation: msp-global-slideUpSlow 0.3s ease-in; animation: msp-global-slideUpSlow 0.3s ease-in; opacity: 1; }
+.nav .nav-holder .nav-elem.anim { -webkit-animation: msp-global-slideUpBellowPositionSlow 0.3s ease-in; animation: msp-global-slideUpBellowPositionSlow 0.3s ease-in; opacity: 1; }
 
 @media screen and (max-width: 768px) {
     .nav .nav-holder { position: absolute; left: 0; top: 100%; display: block; width: 100%; height: auto; -webkit-transform: translateY(calc(-100% - 100px)); -ms-transform: translateY(calc(-100% - 100px)); transform: translateY(calc(-100% - 100px)); background: #080808; -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; z-index: 3; }
