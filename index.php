@@ -8,6 +8,15 @@
 <html lang="en-gb" class="no-js">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134718359-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-134718359-1');
+        </script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Portfolio Mare Sergiu</title>
@@ -45,19 +54,19 @@
 					<div class="bottom"></div>
 				</div>
 				<ul class="nav-holder">
-					<li class="nav-elem active anim-mod" data-delay="300" data-sync="true" data-sub-anim="false">
+					<li class="nav-elem active anim-mod" data-delay="300" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#page-hero">Home</a>
 					</li>
-					<li class="nav-elem anim-mod" data-delay="450" data-sync="true" data-sub-anim="false">
+					<li class="nav-elem anim-mod" data-delay="450" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#about-me">About Me</a>
 					</li>
-					<li class="nav-elem anim-mod" data-delay="600" data-sync="true" data-sub-anim="false">
+					<li class="nav-elem anim-mod" data-delay="600" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#skills">Skills</a>
 					</li>
-					<li class="nav-elem anim-mod" data-delay="750" data-sync="true" data-sub-anim="false">
+					<li class="nav-elem anim-mod" data-delay="750" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#portfolio">Portfolio</a>
 					</li>
-					<li class="nav-elem anim-mod" data-delay="900" data-sync="true" data-sub-anim="false">
+					<li class="nav-elem anim-mod" data-delay="900" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#contact-me">Contact Me</a>
 					</li>
 				</ul>
@@ -535,7 +544,7 @@
 							<!-- form field -->
 							<form class="contact-form" name="sentMessage">
 								<!-- name -->
-								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+								<div class="form-field anim-mod" data-delay="300" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Full name</label>
 									<input type="text" placeholder="ex: Jonh Doe" name="name" />
 
@@ -545,7 +554,7 @@
 									</div>
 								</div>
 								<!-- phone -->
-								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+								<div class="form-field anim-mod" data-delay="450" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title">Phone number</label>
 									<input type="text" placeholder="ex: ++447810788623" name="phone"/>
 
@@ -555,7 +564,7 @@
 									</div>
 								</div>
 								<!-- email -->
-								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required|regex"
+								<div class="form-field anim-mod" data-delay="600" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required|regex"
 								 data-custom-regex="^^\S+@\S+\.\S+$">
 									<label class="sub-title" for="email">Email address</label>
 									<input type="text" placeholder="ex: jonh.doe@exemple.com" id="email" name="email"/>
@@ -566,7 +575,7 @@
 										<div data-validation="regex">Invalid email address</div>
 									</div>
 								</div>
-								<div class="form-field" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
+								<div class="form-field anim-mod" data-delay="750" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
 									<label class="sub-title" for="textarea">Message</label>
 									<textarea type="text" id="textarea" placeholder="Please describe your need. Thank you!" name="message"></textarea>
 
@@ -577,38 +586,42 @@
 								</div>
 							</form>
 						</article>
-						<div class="cf">
+						<div class="btn-holder cf">
 							<!-- full form submit -->
-							<button class="cta full-submit right not-active" disabled>
+							<button class="cta full-submit right not-active anim-mod" data-delay="900" data-reverse-anim="slide-up-hide" data-sync="true" disabled>
 								<span>Submit</span>
 							</button>
 							<!-- full form clear -->
-							<button class="cta form-clear right not-active">
+							<button class="cta form-clear right not-active anim-mod" data-delay="1100" data-reverse-anim="slide-up-hide" data-sync="true">
 								<span>Clear</span>
 							</button>
 						</div>
-					</div>
+						<div class="form-feedback hidden-accesability">
+					        <h3 class="sub-title">I received your email!</h3>
+							<p class="text">Thank you for getting in touch. I'll contact you in the next 48h.</p>							
+					    </div>
+					</div>					
 				</div>
-				<div class="one-third left">
+				<div class="one-third left anim-mod" data-sub-anim="true" data-delay="300" data-sync="false">
 					<address class="address-holder">
 						<dl>
-							<dt class="address-elem">
+							<dt class="address-elem anim-mod" data-delay="300" data-sync="true">
 								<p>Address</p>
 							</dt>
-							<dd class="address-desc">
+							<dd class="address-desc anim-mod" data-delay="300" data-sync="true">
 								<p>19 flat 1 Pembury Road</p>
 								<p>Southend on Sea, UK</p>
 							</dd>
-							<dt class="address-elem">
+							<dt class="address-elem anim-mod" data-delay="450" data-sync="true">
 								<p>Phone</p>
 							</dt>
-							<dd class="address-desc">
+							<dd class="address-desc anim-mod" data-delay="450" data-sync="true">
 								<p>07810788629</p>
 							</dd>
-							<dt class="address-elem">
+							<dt class="address-elem anim-mod" data-delay="600" data-sync="true">
 								<p>E-mail</p>
 							</dt>
-							<dd class="address-desc">
+							<dd class="address-desc anim-mod" data-delay="600" data-sync="true">
 								<p>mare.sergiu@gmail.com</p>
 							</dd>
 						</dl>

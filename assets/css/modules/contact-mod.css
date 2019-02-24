@@ -7,7 +7,10 @@
 .contact .contact-holder .form-section .form-field > .stylish-text,
 .contact .contact-holder .form-section .form-field > .stylish-textarea { background: #ffffff; border-radius: 5px; }
 .contact .contact-holder .form-section .form-field > div > span { border: none; }
+
 .contact .contact-holder .mod-form .cta { margin-left: 20px; }
+.contact .contact-holder .mod-form .form-feedback { margin-bottom: 40px; padding: 20px; border-radius: 5px; background: rgba(250,250,250,0.8); }
+.contact .contact-holder .mod-form .form-feedback .sub-title { margin-bottom: 10px; }
 
 .contact .address-holder { display: inline-block; }
 .contact .address-holder .address-elem { padding: 20px 0 10px; }
