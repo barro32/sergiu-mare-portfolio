@@ -18,7 +18,7 @@
             gtag('config', 'UA-134718359-1');
         </script>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	<title>Portfolio Mare Sergiu</title>
 	<meta name="description" content="Portofolio Mare Sergiu">
 	<meta name="author" content="Mare Sergiu">
@@ -106,7 +106,7 @@
 				<div class="cf">
 					<div class="image-holder left anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
 						<figure class="overlay">
-							<img class="img" src="assets/media/images/sergiu-mare.jpg" class="personal-image" alt="Sergiu Mare photo">
+							<img class="img personal-image" src="assets/media/images/sergiu-mare.jpg" alt="Sergiu Mare photo">
 						</figure>
 					</div>
 					<div class="desc left anim-mod" data-delay="300" data-sub-anim="true" data-sync="false">
@@ -250,7 +250,7 @@
 		<!-- quote -->
 		<section class="quote mod module">
 			<h2 class="hidden-accesability">Quote</h2>
-			<img src="assets/media/images/coding.jpg" alt="background image" class="bg-img" />
+			<img class="bg-img" src="assets/media/images/coding.jpg" alt="background image" />
 			<div class="holder">
 				<p class="title">
 					“Dreams are extremely important. You can’t do it unless you imagine it.”
@@ -301,7 +301,7 @@
 				<div class="skills-description cf mod equal-height">
 					<ul class="two-third left cf">
 						<li class="element half active">
-							<img src="assets/media/images/html5.jpg" class="bg-element" />
+							<img class="bg-element" src="assets/media/images/html5.jpg" alt="html five"/>
 							<h3 class="sub-title bl">HTML5</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">Developing semantic markup for the website's modules.</span>
@@ -309,7 +309,7 @@
 							</p>
 						</li>
 						<li class="element half">
-							<img src="assets/media/images/css3.png" class="bg-element" />
+							<img src="assets/media/images/css3.png" class="bg-element" alt="css three"/>
 							<h3 class="sub-title bl">CSS3/SCSS</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">I use CSS3 on a regular basis in the modules that I develop. I always try to push it to its
@@ -318,7 +318,7 @@
 							</p>
 						</li>
 						<li class="element full-width">
-							<img src="assets/media/images/js.jpg" class="bg-element" />
+							<img src="assets/media/images/js.jpg" class="bg-element" alt="javascript"/>
 							<h3 class="sub-title bl">Vanilla JS/ Jquery / React</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">I use vanilla JavaScript when Jquery it's not available when working with numbers or special
@@ -330,14 +330,14 @@
 							</p>
 						</li>
 						<li class="element full-width">
-							<img src="assets/media/images/git.jpg" class="bg-element" />
+							<img src="assets/media/images/git.jpg" class="bg-element" alt="git hub"/>
 							<h3 class="sub-title bl">GIT</h3>
 							<p class="text hidden-accesability">
 								<span class="bl">Git is used as version control system for every project that I worked on in Codehouse.</span>
 							</p>
 						</li>
 						<li class="element half">
-							<img src="assets/media/images/php.jpg" class="bg-element" />
+							<img class="bg-element" src="assets/media/images/php.jpg" alt="php"/>
 							<h3 class="sub-title bl">PHP</h3>
 							<p class="text hidden-accesability">
 								<span class="bl">PHP was studied by me from a desire to understand the big picture, how the front-end and the
@@ -345,7 +345,7 @@
 							</p>
 						</li>
 						<li class="element half">
-							<img src="assets/media/images/visual-studio.jpg" class="bg-element" />
+							<img src="assets/media/images/visual-studio.jpg" class="bg-element" alt="visual studio"/>
 							<h3 class="sub-title bl">Visual-Studio</h3>
 							<p class="text hidden-accesability">
 								<span class="bl">I use it on a regular basic for the modules that I develop.</span>
@@ -353,7 +353,7 @@
 							</p>
 						</li>
 						<li class="element full-width">
-							<img src="assets/media/images/sitecore.png" class="bg-element" />
+							<img src="assets/media/images/sitecore.png" class="bg-element" alt="sitecore"/>
 							<h3 class="sub-title bl">CMS/Sitecore/Firebase</h3>
 							<p class="text hidden-accesability">
 								<span class="bl">All my front-end modules that are developed on a regular basis, are for CMS, mostly for
@@ -380,7 +380,7 @@
 					<div class="row cf">
 						<div class="two-third left row-elem">
 							<div class="show-desktop anim-mod" data-delay="300" data-sync="true">
-								<img class="img-frame" src="assets/media/images/desktop-frame.png" />
+								<img class="img-frame" src="assets/media/images/desktop-frame.png" alt="image frame" />
 								<div class="content">
 									<img class="img-project" src="assets/media/images/sknk-desktop.png" alt="sknk image desktop version" />
 								</div>
@@ -408,7 +408,7 @@
 							<div class="holder-image-text">
 								<p class="sub-title">Surf the website</p>
 								<figure class="align-center">
-									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" />
+									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" alt="arrow"/>
 								</figure>
 							</div>
 						</div>
@@ -444,7 +444,7 @@
 							<div class="holder-image-text">
 								<p class="sub-title">Surf the website</p>
 								<figure class="align-center">
-									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" />
+									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" alt="arrow"/>
 								</figure>
 							</div>
 						</div>
@@ -452,7 +452,7 @@
 					<div class="row cf">
 						<div class="two-third left row-elem">
 							<div class="show-desktop anim-mod" data-delay="300" data-sync="true">
-								<img class="img-frame" src="assets/media/images/desktop-frame.png" />
+								<img class="img-frame" src="assets/media/images/desktop-frame.png" alt="arrow"/>
 								<div class="content">
 									<img class="img-project" src="assets/media/images/text-miner-desktop.png" alt="sknk image desktop version" />
 								</div>
@@ -480,7 +480,7 @@
 							<div class="holder-image-text">
 								<p class="sub-title">Surf the website</p>
 								<figure class="align-center">
-									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" />
+									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" alt="arrow"/>
 								</figure>
 							</div>
 						</div>
@@ -491,18 +491,18 @@
 						<h3 class="my-project-title">Bug fixing projects</h3>
 						<ul class="cf">
 							<li class="left element">
-								<a href="http://www.mandg.co.uk/" target="_blank">
-									<img class="project-img" src="assets/media/images/m&g.png" />
+								<a href="http://www.mandg.co.uk/" target="_blank" rel="noreferrer">
+									<img class="project-img" src="assets/media/images/m&g.png" alt="M&G"/>
 								</a>
 							</li>
 							<li class="left element">
-								<a href="http://www.thegappartnership.com/" target="_blank">
-									<img class="project-img" src="assets/media/images/gap.png" />
+								<a href="http://www.thegappartnership.com/" target="_blank" rel="noreferrer">
+									<img class="project-img" src="assets/media/images/gap.png" alt="the gap"/>
 								</a>
 							</li>
 							<li class="left element">
-								<a href="https://www.eef.org.uk/" target="_blank">
-									<img class="project-img" src="assets/media/images/eef.jpg" />
+								<a href="https://www.eef.org.uk/" target="_blank" rel="noreferrer">
+									<img class="project-img" src="assets/media/images/eef.jpg" alt="eef"/>
 								</a>
 							</li>
 						</ul>
@@ -511,8 +511,8 @@
 						<h3 class="my-project-title">Projects done from scratch</h3>
 						<ul class="cf">
 							<li class="left element">
-								<a href="https://www.coltdatacentres.net/" target="_blank">
-									<img src="assets/media/images/colt.png" class="project-img" />
+								<a href="https://www.coltdatacentres.net/" target="_blank" rel="noreferrer">
+									<img src="assets/media/images/colt.png" class="project-img" alt="colt"/>
 								</a>
 								<div class="btn-holder">
 									<button class="cta" data-file="colt" type="button">
@@ -545,8 +545,8 @@
 							<form class="contact-form" name="sentMessage">
 								<!-- name -->
 								<div class="form-field anim-mod" data-delay="300" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
-									<label class="sub-title">Full name</label>
-									<input type="text" placeholder="ex: Jonh Doe" name="name" />
+									<label class="sub-title" for="full-name">Full name</label>
+									<input type="text" placeholder="ex: Jonh Doe" name="name" id="full-name"/>
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -555,8 +555,8 @@
 								</div>
 								<!-- phone -->
 								<div class="form-field anim-mod" data-delay="450" data-reverse-anim="slide-up-hide" data-sync="true" data-type="text" data-field-id="ModelPropertyA" data-validation="required">
-									<label class="sub-title">Phone number</label>
-									<input type="text" placeholder="ex: ++447810788623" name="phone"/>
+									<label class="sub-title" for="phone">Phone number</label>
+									<input type="text" placeholder="ex: ++447810788623" name="phone" id="phone"/>
 
 									<!-- error messages -->
 									<div class="err-msgs">
@@ -649,18 +649,21 @@
 				<h3 class="hidden-accesability">Footer navigation</h3>
 				<ul class="nav-list">
 					<li class="nav-elem">
-						<a class="icon" href="https://www.linkedin.com/in/sergiuandreioctaviamare/">
-							<img src="assets/media/icons/linked-in-white.svg">
+						<a class="icon" href="https://www.linkedin.com/in/sergiuandreioctaviamare/" rel="noreferrer">
+						    <span class="desc">Sergiu Mare linkedin</span>
+							<img src="assets/media/icons/linked-in-white.svg" alt="inked in">
 						</a>
 					</li>
 					<li class="nav-elem">
-						<a href="https://github.com/maresergiu">
-							<img src="assets/media/icons/git-white.svg" class="icon">
+						<a href="https://github.com/maresergiu" rel="noreferrer">
+						    <span class="desc">Sergiu Mare github</span>
+							<img class="icon" src="assets/media/icons/git-white.svg" alt="git hub">
 						</a>
 					</li>
 					<li class="nav-elem">
-						<a href="https://codepen.io/maresergiu/">
-							<img src="assets/media/icons/codepen-white.svg" class="icon">
+					    <span class="desc">Sergiu Mare codepen</span>
+						<a href="https://codepen.io/maresergiu/" rel="noreferrer">
+							<img class="icon" src="assets/media/icons/codepen-white.svg" alt="codepen">
 						</a>
 					</li>
 				</ul>

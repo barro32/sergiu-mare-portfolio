@@ -141,7 +141,8 @@ svg { width: 100%; height: auto; }
 .footer .footer-desc { background: transparent; }
 .footer .footer-desc { text-align: right; }
 .footer .secondary-nav .nav-list { margin: 0; }
-.footer .secondary-nav .nav-list .nav-elem { padding-right: 20px; }
+.footer .secondary-nav .nav-list .nav-elem { position: relative; padding-right: 20px; }
+.footer .secondary-nav .nav-list .nav-elem .desc { position: absolute; top: 0; left: 0; height: 0; overflow: hidden; }
 .footer .secondary-nav .nav-list .nav-elem:last-child { padding-right: 0; }
 .footer .secondary-nav .nav-list .icon { width: 40px; }
 .footer .footer-desc p { color: #ffffff; margin: 0; }
