@@ -99,11 +99,15 @@ var initMap;
                         ]
                     });
                     iconBase = 'assets/media/images/mapIconSem.png';
-                    marker = new google.maps.Marker({
-                        position: uluru,
-                        icon: iconBase,
-                        map: map
-                    });
+
+                    setTimeout(function () {
+                        marker = new google.maps.Marker({
+                            position: uluru,
+                            animation: google.maps.Animation.DROP,
+                            icon: iconBase,
+                            map: map
+                        });
+                    }, msp.cache.timer.long);
                 };
             },
             init: function () {
