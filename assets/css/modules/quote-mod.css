@@ -1,6 +1,6 @@
 /* quote module */
 .quote { background: transparent; }
-.quote .bg-img { position: fixed; top: 0; left: 50%; height: 100%; min-width: 100%; max-width: inherit; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); z-index: -1; }
+.quote .bg-img { position: fixed; top: 0; left: 50%; width: auto; height: 100vh; min-width: 100%; max-width: inherit; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); z-index: -1; }
 .quote .title { color: #ffffff; font-size: 30px; font-size: 3.0rem; padding-bottom: 0; }
 .quote .full-width { text-align: right; font-style: italic; font-size: 18px; font-size: 1.8rem; padding-top: 25px; }
 .quote.mod { padding: 100px 0; }
