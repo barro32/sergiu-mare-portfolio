@@ -485,6 +485,42 @@
 							</div>
 						</div>
 					</div>
+					<div class="row cf">
+						<div class="two-third right row-elem">
+							<div class="show-desktop anim-mod" data-delay="300" data-sync="true">
+								<img class="img-frame" src="assets/media/images/desktop-frame.png" alt="desktop frame image" />
+								<div class="content">
+									<img class="img-project" src="assets/media/images/movies-desktop.png" alt="movies react application desktop" />
+								</div>
+							</div>
+							<div class="show-tablet anim-mod" data-delay="450" data-sync="true">
+								<img class="img-frame" src="assets/media/images/tablet-frame.png" alt="tablet frame image" />
+								<div class="content">
+									<img class="img-project" src="assets/media/images/movies-tablet.png" alt="movies react application tablet" />
+								</div>
+							</div>
+							<div class="show-mobile anim-mod" data-delay="600" data-sync="true">
+								<img class="img-frame" src="assets/media/images/mobile-frame.png" alt="mobile frame image" />
+								<div class="content">
+									<img class="img-project" src="assets/media/images/movies-mobile.png" alt="movies react application mobile" />
+								</div>
+							</div>
+						</div>
+						<div class="one-third left row-elem">
+							<h4 class="sub-title">Movies</h4>
+							<div class="btn-holder">
+								<button class="cta" type="button" data-file="movies">
+									<span>Details</span>
+								</button>
+							</div>
+							<div class="holder-image-text">
+								<p class="sub-title">Surf the website</p>
+								<figure class="align-center">
+									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" alt="arrow"/>
+								</figure>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="other-projects">
 					<div class="row other-project cf">
