@@ -1,0 +1,6 @@
+{
+  "title": "Movies react application",
+  "info": "This is a personal project created in React.js. The user will have the possibility to delete, add or modify movies. This application encapsulates the majority of the challenges that a developer faces when working with React.js, like form validation, routing, sorting, searching, lifting the state of modules, passing data and saving it.",
+  "skills": "This application was built with HTML5, CSS3, React, and Heroku.",
+  "url": "https://movies-react-app-2019.herokuapp.com/"
+}
