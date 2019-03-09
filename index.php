@@ -115,7 +115,7 @@
 						</p>
 						<p class="text sub-anim-mod" data-sub-delay="600">I understand the needs of the business and of the user, so I place the
 							product in the middle, so both sides can extract value by using the system created by me.
-							Touching both sides, UX and UI offer me the possibility to take an idea from concept to reality. 
+							Touching both sides, UX and UI offers me the possibility to take an idea from concept to reality. 
 							I love to develop web applications that can help users and business owners to achieve their goal.
 						</p>
 						<p class="text sub-anim-mod" data-sub-delay="750">
@@ -204,8 +204,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Expert in using in using Jquery for DOM manipulation, and Handlebars as a template library.</p>								
-								<p class="text">Usage of React.js, for modern UI.</p>
+								<p class="text">Expert in using Jquery for DOM manipulation, and Handlebars as a template library.</p>								
+								<p class="text">I use React.js, for modern UI.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -214,7 +214,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">High usage of Ajax calls to comunicate with the back end and to display dynamic content.</p>
+								<p class="text">High usage of Ajax calls to communicate with the back-end and to display dynamic content.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -241,7 +241,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Experince with POST CSS and SCSS.</p>
+								<p class="text">Experince with POSTCSS and SCSS.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -357,7 +357,7 @@
 						</li>
 						<li class="element full-width">
 							<img src="assets/media/images/css3.png" class="bg-element" alt="css three"/>
-							<h3 class="sub-title bl">POST-CSS/SCSS</h3>
+							<h3 class="sub-title bl">POSTCSS/SCSS</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">I love the flexibility given by this CSS preprocessor. It makes the code more flexible and maintainable.</span>
 								<span class="bl">I switched to POSTCSS because it can be configurable. Combined with Gulp offers more compared to SCSS.</span>
@@ -368,8 +368,8 @@
 							<h3 class="sub-title bl">Vanilla JS/ Jquery / React</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">I use vanilla JavaScript when I have to work with data and objects.</span>
-								<span class="bl">When I have to use a CMS to develop a solution, I use Jquery.</span>							
-								<span class="bl">When don't have to use a CSM I use React to develop the UI, due to its flexibility.</span>
+								<span class="bl">I use Jquery, when I have to use a CMS to develop a solution.</span>							
+								<span class="bl">When I don't have to use a CSM I use React to develop the UI, due to its flexibility.</span>
 							</p>
 						</li>
 						<li class="element half">
@@ -383,7 +383,7 @@
 							<img src="assets/media/images/git.jpg" class="bg-element" alt="git hub"/>
 							<h3 class="sub-title bl">GULP</h3>
 							<p class="text hidden-accesability">
-								<span class="bl">I use Gulp every day in web development to run the POSTCSS and Babel plugin.</span>
+								<span class="bl">I use Gulp every day in web development.</span>
 							</p>
 						</li>
 						<li class="element one-third">
