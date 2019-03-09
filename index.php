@@ -9,14 +9,13 @@
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134718359-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-134718359-1');
-        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134718359-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-134718359-1');
+    </script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	<title>Portfolio Mare Sergiu</title>
@@ -58,7 +57,7 @@
 						<a class="nav-anchor" href="#page-hero">Home</a>
 					</li>
 					<li class="nav-elem anim-mod" data-delay="450" data-sync="true" data-sub-anim-mod="false">
-						<a class="nav-anchor" href="#about-me">About Me</a>
+						<a class="nav-anchor" href="#about-me">About</a>
 					</li>
 					<li class="nav-elem anim-mod" data-delay="600" data-sync="true" data-sub-anim-mod="false">
 						<a class="nav-anchor" href="#skills">Skills</a>
@@ -67,7 +66,7 @@
 						<a class="nav-anchor" href="#portfolio">Portfolio</a>
 					</li>
 					<li class="nav-elem anim-mod" data-delay="900" data-sync="true" data-sub-anim-mod="false">
-						<a class="nav-anchor" href="#contact-me">Contact Me</a>
+						<a class="nav-anchor" href="#contact-me">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -115,10 +114,9 @@
 							Welcome on my page, my name is Sergiu Mare and I am a Front-End Developer.
 						</p>
 						<p class="text sub-anim-mod" data-sub-delay="600">I understand the needs of the business and of the user, so I place the
-							product in the middle of them, so both sides can extract value by using
-							the system created by me.
-							Touching both sides, UX and UI offer me the possibility to take an idea
-							from concept to reality. I love to develop web applications that can make a real change in the day to day life.
+							product in the middle, so both sides can extract value by using the system created by me.
+							Touching both sides, UX and UI offer me the possibility to take an idea from concept to reality. 
+							I love to develop web applications that can help users and business owners to achieve their goal.
 						</p>
 						<p class="text sub-anim-mod" data-sub-delay="750">
 							I believe in a strong work ethic and I am a continuous learner, goal oriented and open-minded person.
@@ -149,7 +147,25 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="duty-details">
-								<p class="text">Seeing the web-application in a module-component way increases consistency, reliability,
+								<p class="text">Understanding the importance of the UX process, starting from the strategy and finishing with the surface, and the impact that it has over web development.</p>
+							</span>
+						</li>
+						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="duty-details">
+								<p class="text">Writing documentation for each project, module, component or library that I develop.</p>
+							</span>
+						</li>
+						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="duty-details">
+								<p class="text">Seeing the web-application in a module/component way increases consistency, reliability,
 									performance and debugging.</p>
 							</span>
 						</li>
@@ -178,9 +194,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Write browser compatible vanila javaScript.</p>
-								<p class="text">Usage of ES5, ES6 and ES7.</p>
-								<p class="text">Understanding and codind for OOP.</p>
+								<p class="text">Write browser compatible vanilla javaScript.</p>
+								<p class="text">Usage of ES5, ES6, ES7 and OOP</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -189,9 +204,8 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Expert in using in using Jquery for DOM manipulation.</p>
-								<p class="text">Usage of React.js</p>
-								<p class="text">I use Hhandlebars.js for generating template.</p>
+								<p class="text">Expert in using in using Jquery for DOM manipulation, and Handlebars as a template library.</p>								
+								<p class="text">Usage of React.js, for modern UI.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -200,8 +214,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">High usage of Ajax calls to generate dynamic content.</p>
-								<p class="text">Ajax based applications.</p>
+								<p class="text">High usage of Ajax calls to comunicate with the back end and to display dynamic content.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -210,8 +223,25 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Using Gulp in the process of web development.</p>
-								<p class="text">Experince with POST CSS.</p>
+								<p class="text">Using Firebase to develop web applications, having also experience with Sitecore.</p>
+							</span>
+						</li>
+						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="text duty-details">
+								<p class="text">Using a tusk runner like Gulp for web development.</p>																
+							</span>
+						</li>
+						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="text duty-details">
+								<p class="text">Experince with POST CSS and SCSS.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -231,7 +261,7 @@
 							<span class="duty-details">
 								<p class="text">Using jira/trello as a ticket system.</p>
 								<p class="text">Agile development methodology.</p>
-								<p class="text">Tracking my time to increase performance.</p>
+								<p class="text">Time tracking for performance review.</p>
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
@@ -241,6 +271,15 @@
 							</span>
 							<span class="duty-details">
 								<p class="text">Work effectively in a team and also by myself.</p>
+							</span>
+						</li>
+						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.636 49.636">
+									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
+							</span>
+							<span class="duty-details">
+								<p class="text">Offering support when needed.</p>
 							</span>
 						</li>
 					</ul>
@@ -272,7 +311,7 @@
 							</svg>
 						</div>
 						<h3 class="sub-title sub-anim-mod" data-sub-delay="450">Structure</h3>
-						<p class="text sub-anim-mod" data-sub-delay="600">Semantic markup made with HTML5, is very important for the struncture and the SEO of the webpage.</p>
+						<p class="text sub-anim-mod" data-sub-delay="600">Semantic markup combine with powerful SEO offers high visibility in Google Search.</p>
 					</li>
 					<li class="tile cf anim-mod" data-delay="300" data-sub-anim="true" data-sync="false">
 						<div class="icon sub-anim-mod" data-sub-delay="300">
@@ -310,54 +349,77 @@
 						</li>
 						<li class="element half">
 							<img src="assets/media/images/css3.png" class="bg-element" alt="css three"/>
-							<h3 class="sub-title bl">CSS3/SCSS</h3>
+							<h3 class="sub-title bl">CSS3</h3>
 							<p class="hidden-accesability text">
 								<span class="bl">I use CSS3 on a regular basis in the modules that I develop. I always try to push it to its
-									maximum potential to avoid the usage of JavaScript.</span>
-								<span class="bl">I've studied SCSS to understand its advantages and uses.</span>
+									maximum potential to avoid the usage of JavaScript.</span>								
+							</p>
+						</li>
+						<li class="element full-width">
+							<img src="assets/media/images/css3.png" class="bg-element" alt="css three"/>
+							<h3 class="sub-title bl">POST-CSS/SCSS</h3>
+							<p class="hidden-accesability text">
+								<span class="bl">I love the flexibility given by this CSS preprocessor. It makes the code more flexible and maintainable.</span>
+								<span class="bl">I switched to POSTCSS because it can be configurable. Combined with Gulp offers more compared to SCSS.</span>
 							</p>
 						</li>
 						<li class="element full-width">
 							<img src="assets/media/images/js.jpg" class="bg-element" alt="javascript"/>
 							<h3 class="sub-title bl">Vanilla JS/ Jquery / React</h3>
 							<p class="hidden-accesability text">
-								<span class="bl">I use vanilla JavaScript when Jquery it's not available when working with numbers or special
-									instances of the page.</span>
-								<span class="bl">I use jquery to manipulate the DOM, mostly for every user interaction.</span>
-								<span class="bl">Ajax gives the option to add dynamic content without refreshing the page.</span>
-								<span class="bl">I learned React from a personal desire, to expand my knowledge. I used it in small snippets
-									that I created.</span>
+								<span class="bl">I use vanilla JavaScript when I have to work with data and objects.</span>
+								<span class="bl">When I have to use a CMS to develop a solution, I use Jquery.</span>							
+								<span class="bl">When don't have to use a CSM I use React to develop the UI, due to its flexibility.</span>
 							</p>
 						</li>
-						<li class="element full-width">
+						<li class="element half">
 							<img src="assets/media/images/git.jpg" class="bg-element" alt="git hub"/>
 							<h3 class="sub-title bl">GIT</h3>
 							<p class="text hidden-accesability">
-								<span class="bl">Git is used as version control system for every project that I worked on in Codehouse.</span>
+								<span class="bl">I use Git as a version control software.</span>
 							</p>
 						</li>
 						<li class="element half">
+							<img src="assets/media/images/git.jpg" class="bg-element" alt="git hub"/>
+							<h3 class="sub-title bl">GULP</h3>
+							<p class="text hidden-accesability">
+								<span class="bl">I use Gulp every day in web development to run the POSTCSS and Babel plugin.</span>
+							</p>
+						</li>
+						<li class="element one-third">
 							<img class="bg-element" src="assets/media/images/php.jpg" alt="php"/>
 							<h3 class="sub-title bl">PHP</h3>
 							<p class="text hidden-accesability">
-								<span class="bl">PHP was studied by me from a desire to understand the big picture, how the front-end and the
-									back-end work together in a page.</span>
+								<span class="bl">I have used PHP in the past for basic requirements.</span>								
 							</p>
 						</li>
-						<li class="element half">
+						<li class="element one-third">
+							<img class="bg-element" src="assets/media/images/php.jpg" alt="php"/>
+							<h3 class="sub-title bl">Node.js</h3>
+							<p class="text hidden-accesability">
+								<span class="bl">I'm using Node.js when I develop web applications with React.js. </span>								
+							</p>
+						</li>
+						<li class="element one-third">
 							<img src="assets/media/images/visual-studio.jpg" class="bg-element" alt="visual studio"/>
 							<h3 class="sub-title bl">Visual-Studio</h3>
 							<p class="text hidden-accesability">
-								<span class="bl">I use it on a regular basic for the modules that I develop.</span>
+								<span class="bl">It's my favourite code editor.</span>
 								<span class="bl">I love the fact that is very adaptable and customizable.</span>
 							</p>
 						</li>
-						<li class="element full-width">
+						<li class="element half">
 							<img src="assets/media/images/sitecore.png" class="bg-element" alt="sitecore"/>
-							<h3 class="sub-title bl">CMS/Sitecore/Firebase</h3>
+							<h3 class="sub-title bl">Sitecore</h3>
 							<p class="text hidden-accesability">
-								<span class="bl">All my front-end modules that are developed on a regular basis, are for CMS, mostly for
-									Sitecore.</span>
+								<span class="bl">Experience developing modules for Sitecore CMS.</span>
+							</p>
+						</li>
+						<li class="element half">
+							<img src="assets/media/images/sitecore.png" class="bg-element" alt="sitecore"/>
+							<h3 class="sub-title bl">Firebase</h3>
+							<p class="text hidden-accesability">
+								<span class="bl">Experience developing web application using Firebase.</span>
 							</p>
 						</li>
 					</ul>
