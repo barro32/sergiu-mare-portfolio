@@ -6,6 +6,7 @@
 .skills .tiles .tile:after { content: ""; position: absolute; top: 0; right: 0; width: 2px; height: 100%; background: #5887ff; }
 .skills .tiles .tile:last-of-type:after { opacity: 0; }
 .skills .skills-description { position: relative; overflow: hidden; padding: 50px 20px; z-index: 1; }
+.skills .skills-description ul { margin: 0; }
 .skills .skills-description .sub-title { color: #ffffff; }
 .skills .skills-description .element { position: relative; float: left; display: inline-block; border: 4px solid #ffffff; overflow: hidden; }
 .skills .skills-description .element .text { color: #ffffff; max-width: 600px; margin: 0 auto; padding: 20px 20px 50px; font-size: 18px; font-size: 1.8rem; }
