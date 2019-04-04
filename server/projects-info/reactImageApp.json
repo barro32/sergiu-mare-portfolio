@@ -1,0 +1,6 @@
+{
+    "title": "React image app",
+    "info": "This application offers the user the possibility to view infinite pictures in the gallery section, and send feedback as well.",
+    "skills": "From a design point of view, I had to do the UX, and also to create a design. This web application was built with HTML5, CSS3, React.js, Firebase and Rest API.",
+    "url": "https://image-app-telegraph.firebaseapp.com/home"
+}

@@ -569,9 +569,45 @@
 							</div>
 						</div>
 						<div class="one-third left row-elem">
-							<h4 class="sub-title">Movies</h4>
+							<h4 class="sub-title">React movie app</h4>
 							<div class="btn-holder">
 								<button class="cta" type="button" data-file="movies">
+									<span>Details</span>
+								</button>
+							</div>
+							<div class="holder-image-text">
+								<p class="sub-title">Surf the website</p>
+								<figure class="align-center">
+									<img class="funky-arrow" src="assets/media/images/funky-arrow.png" alt="arrow"/>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="row cf">
+						<div class="two-third left row-elem">
+							<div class="show-desktop anim-mod" data-delay="300" data-sync="true">
+								<img class="img-frame" src="assets/media/images/desktop-frame.png" alt="arrow"/>
+								<div class="content">
+									<img class="img-project" src="assets/media/images/react-image-app-desktop.png" alt="react image app desktop version" />
+								</div>
+							</div>
+							<div class="show-tablet anim-mod" data-delay="450" data-sync="true">
+								<img class="img-frame" src="assets/media/images/tablet-frame.png" alt="sknk image desktop version" />
+								<div class="content">
+									<img class="img-project" src="assets/media/images/react-image-app-tablet.png" alt="react image app tablet version" />
+								</div>
+							</div>
+							<div class="show-mobile anim-mod" data-delay="600" data-sync="true">
+								<img class="img-frame" src="assets/media/images/mobile-frame.png" alt="sknk image desktop version" />
+								<div class="content">
+									<img class="img-project" src="assets/media/images/react-image-app-mobile.png" alt="react image app desktop version" />
+								</div>
+							</div>
+						</div>
+						<div class="one-third left row-elem">
+							<h4 class="sub-title">React image app</h4>
+							<div class="btn-holder">
+								<button type="button" class="cta" data-file="reactImageApp">
 									<span>Details</span>
 								</button>
 							</div>
