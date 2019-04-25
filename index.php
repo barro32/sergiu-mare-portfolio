@@ -232,7 +232,7 @@
 									<path fill="#5887ff" d="M23.001 27.245L0 23.39 49.636.61l-24 48.416z" /></svg>
 							</span>
 							<span class="text duty-details">
-								<p class="text">Using a tusk runner like Gulp for web development.</p>																
+								<p class="text">Using a task runner like Gulp for web development.</p>																
 							</span>
 						</li>
 						<li class="duty anim-mod" data-delay="300" data-sub-anim="false" data-sync="false">
