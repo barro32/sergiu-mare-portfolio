@@ -1,6 +1,6 @@
 {
     "title": "Text-miner",
-    "info": "This web application, let's the user to upload a pdf document, and it returns the suummary of that pdf. No need to read a 25 pages pdf anymore :).",
+    "info": "This web application, let's the user to upload a pdf document, and it returns the summary of that pdf. No need to read a 25 pages pdf anymore :).",
     "skills": "From a design point of view, I had to do the UX journey with the client, and also to create a design in a photoshop. This web application was built with HTML5, CSS3, Javaassets/scripts/Jquery, Firebase and Rest API.",
     "url": "https://text-miner-6d612.firebaseapp.com"
 }
